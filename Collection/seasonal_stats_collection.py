@@ -80,7 +80,7 @@ def build_csv_seasonal():
                 df = names
 
         df.reset_index(drop=True, inplace=True)
-        df.to_csv(f'../../CSVs/Seasonally/{name}.csv')
+        df.to_csv(f'../CSVs/Seasonally/{name}.csv')
     driver.quit()
 
 
@@ -93,7 +93,7 @@ def preprocess_names(name: str) -> (str, str):
     Returns (str - Player name, str - Team(s) name)
     -------
     """
-    with open('../../Utils/TeamConversions.json') as f:
+    with open('../Utils/TeamConversions.json') as f:
         teams = json.load(f)['abbreviation_to_team']
 
     names = ['', '']
@@ -112,3 +112,6 @@ def preprocess_names(name: str) -> (str, str):
                 break
 
     return names[0], names[1]
+
+
+build_csv_seasonal()

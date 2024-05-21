@@ -1,0 +1,1216 @@
+name,team,opponent,week,season,isHome,INT,YDS,TD
+Jordan Poyer,BUF,WSH,3,2021,False,1,26,0
+Micah Hyde,BUF,WSH,3,2021,False,1,11,0
+Trayvon Mullen,LV,PIT,2,2021,True,1,18,0
+Greg Stroman Jr.,CHI,WSH,5,2023,True,1,0,0
+Fred Warner,SF,CLE,6,2023,True,1,32,0
+Deommodore Lenoir,SF,CLE,6,2023,True,1,28,0
+Martin Emerson Jr.,CLE,SF,6,2023,False,1,14,0
+Jalen Pitre,HOU,CHI,3,2022,True,2,22,0
+Roquan Smith,CHI,HOU,3,2022,False,1,18,0
+Eddie Jackson,CHI,HOU,3,2022,False,1,0,0
+Tashaun Gipson Sr.,SF,SEA,2,2022,False,1,14,0
+Charvarius Ward,SF,SEA,2,2022,False,1,9,0
+Minkah Fitzpatrick,PIT,CIN,12,2021,True,1,18,0
+Mike Hilton,CIN,PIT,12,2021,False,1,24,1
+Eli Apple,CIN,PIT,12,2021,False,1,50,0
+Jalen Thompson,ARI,NYG,2,2023,False,1,35,0
+Jaylinn Hawkins,ATL,NYJ,5,2021,False,1,11,0
+Landon Collins,WSH,PHI,15,2021,True,1,0,0
+Bobby McCain,WSH,TB,10,2021,False,1,19,0
+William Jackson III,WSH,TB,10,2021,False,1,0,0
+Isaiah Simmons,NYG,WSH,11,2023,True,1,54,1
+Darnay Holmes,NYG,WSH,11,2023,True,1,2,0
+Nick McCloud,NYG,WSH,11,2023,True,1,0,0
+Ashtyn Davis,NYJ,NE,18,2023,True,1,14,0
+Tony Adams,NYJ,NE,18,2023,True,1,0,0
+Juan Thornhill,KC,SEA,16,2022,False,1,0,0
+Damontae Kazee,DAL,LAC,2,2021,True,1,0,0
+Trevon Diggs,DAL,LAC,2,2021,True,1,0,0
+Asante Samuel Jr.,LAC,DAL,2,2021,False,1,26,0
+Cobie Durant,LAR,DEN,16,2022,False,2,100,1
+Bobby Wagner,LAR,DEN,16,2022,False,1,13,0
+Jalen Ramsey,LAR,DEN,16,2022,False,1,0,0
+Xavier McKinney,NYG,LV,9,2021,False,2,41,1
+Deonte Banks,NYG,WSH,7,2023,False,1,6,0
+Darnell Savage,GB,MIN,17,2022,False,1,75,1
+Adrian Amos,GB,MIN,17,2022,False,1,26,0
+Rudy Ford,GB,MIN,17,2022,False,1,19,0
+Tremaine Edmunds,CHI,CLE,15,2023,True,1,45,1
+Tyrique Stevenson,CHI,CLE,15,2023,True,1,34,0
+Eddie Jackson,CHI,CLE,15,2023,True,1,27,0
+D'Anthony Bell,CLE,CHI,15,2023,False,1,6,0
+Jeremiah Owusu-Koramoah,CLE,CHI,15,2023,False,1,0,0
+Donovan Wilson,DAL,WSH,18,2023,True,1,0,0
+DaRon Bland,DAL,WSH,18,2023,True,1,0,0
+Quan Martin,WSH,DAL,18,2023,False,1,7,0
+Darius Slay Jr.,PHI,CAR,5,2021,True,2,21,0
+Steven Nelson,PHI,CAR,5,2021,True,1,4,0
+Donte Jackson,CAR,PHI,5,2021,False,1,0,0
+Julian Love,NYG,KC,8,2021,True,1,0,0
+Willie Gay,KC,NYG,8,2021,False,1,13,0
+Isaiah Pola-Mao,LV,MIA,11,2023,True,1,0,0
+Jalen Ramsey,MIA,LV,11,2023,False,2,3,0
+Jaelan Phillips,MIA,LV,11,2023,False,1,5,0
+Patrick Peterson,MIN,CHI,18,2022,True,1,28,0
+Duke Shelley,MIN,CHI,18,2022,True,1,0,0
+Greg Stroman Jr.,CHI,MIN,18,2022,False,1,10,0
+Chandon Sullivan,PIT,CLE,11,2023,True,1,0,0
+DaRon Bland,DAL,NYG,1,2023,True,1,22,1
+Stephon Gilmore,DAL,NYG,1,2023,True,1,0,0
+Jordan Poyer,BUF,NO,12,2021,True,1,18,0
+Bradley Roby,NO,BUF,12,2021,False,1,2,0
+Kwon Alexander,NO,BUF,12,2021,False,1,0,0
+Kyle Dugger,NE,CLE,10,2021,False,1,37,0
+Tashaun Gipson Sr.,SF,LV,17,2022,True,1,56,0
+Drake Jackson,SF,LV,17,2022,True,1,0,0
+Amik Robertson,LV,SF,17,2022,False,1,0,0
+Malik Hooker,DAL,WSH,18,2022,True,1,0,0
+Kendall Fuller,WSH,DAL,18,2022,False,1,29,1
+Carlos Watkins,DAL,NO,13,2021,True,1,29,1
+Damontae Kazee,DAL,NO,13,2021,True,1,8,0
+Jayron Kearse,DAL,NO,13,2021,True,1,0,0
+Trevon Diggs,DAL,NO,13,2021,True,1,0,0
+Marshon Lattimore,NO,DAL,13,2021,False,1,15,0
+Robert Alford,ARI,CLE,6,2021,True,1,23,0
+Sebastian Joseph-Day,LAC,DEN,18,2022,True,1,4,0
+Travon Walker,JAX,WSH,1,2022,True,1,9,0
+Tyson Campbell,JAX,WSH,1,2022,True,1,3,0
+Darrick Forrest,WSH,JAX,1,2022,False,1,1,0
+Tyson Campbell,JAX,TEN,18,2022,False,1,29,0
+Jimmie Ward,SF,ARI,11,2022,True,1,0,0
+Samuel Womack III,SF,ARI,11,2022,True,1,0,0
+Levi Wallace,PIT,BUF,5,2022,True,1,0,0
+Kaiir Elam,BUF,PIT,5,2022,False,1,0,0
+Donte Jackson,CAR,LAR,6,2022,True,1,30,1
+Nick Scott,LAR,CAR,6,2022,False,1,0,0
+Quandre Diggs,SEA,JAX,8,2021,False,1,9,0
+Reed Blankenship,PHI,NYG,18,2023,True,1,0,0
+Xavier McKinney,NYG,PHI,18,2023,False,2,4,0
+Garrett Williams,ARI,SEA,7,2023,True,1,0,0
+Roger McCreary,TEN,TB,10,2023,True,1,18,0
+Antoine Winfield Jr.,TB,TEN,10,2023,False,1,28,0
+Arthur Maulet,BAL,LAC,12,2023,True,1,0,0
+Ahkello Witherspoon,LAR,PHI,5,2023,False,1,0,0
+Ryan Neal,SEA,LAC,7,2022,True,1,13,0
+Kenneth Murray Jr.,LAC,SEA,7,2022,False,1,16,0
+Alohi Gilman,LAC,BUF,16,2023,False,1,0,0
+Christian Izien,TB,MIN,1,2023,True,1,14,0
+Damien Wilson,JAX,IND,18,2021,False,1,1,0
+Kevin Byard III,PHI,KC,11,2023,True,1,0,0
+L'Jarius Sneed,KC,PHI,11,2023,False,1,0,0
+Jaylon Johnson,CHI,DET,14,2023,False,1,7,0
+Tremaine Edmunds,CHI,DET,14,2023,False,1,6,0
+Will Harris,DET,WSH,2,2022,False,1,0,0
+Jevon Holland,MIA,NE,1,2022,False,1,31,0
+Jermaine Johnson,NYJ,CLE,17,2023,True,1,37,1
+Ronnie Hickman,CLE,NYJ,17,2023,False,1,30,1
+Minkah Fitzpatrick,PIT,BAL,17,2022,True,1,0,0
+James Pierre,PIT,IND,12,2022,True,1,0,0
+Xavien Howard,MIA,NYG,13,2021,False,1,0,0
+Talanoa Hufanga,SF,LAR,4,2022,False,1,52,1
+Xavier Woods,MIN,DAL,8,2021,False,1,12,0
+Paulson Adebo,NO,CHI,9,2023,False,2,5,0
+Marcus Maye,NO,CHI,9,2023,False,1,0,0
+Devon Witherspoon,SEA,NYG,4,2023,True,1,97,1
+Quandre Diggs,SEA,NYG,4,2023,True,1,21,0
+Greedy Williams,CLE,LV,15,2021,False,1,7,0
+Marlon Davidson,ATL,TB,13,2021,False,1,3,1
+Myles Bryant,NE,JAX,17,2021,False,1,33,0
+Kyle Dugger,NE,JAX,17,2021,False,1,20,0
+J.C. Jackson,NE,JAX,17,2021,False,1,0,0
+Harrison Smith,MIN,SF,12,2021,True,1,10,0
+Azeez Al-Shaair,SF,MIN,12,2021,False,1,24,0
+Grant Delpit,CLE,PIT,2,2023,True,1,0,0
+Alex Highsmith,PIT,CLE,2,2023,False,1,30,1
+Bradley Chubb,DEN,LV,16,2021,True,1,21,0
+Kendall Fuller,WSH,HOU,11,2022,True,1,37,1
+Darrick Forrest,WSH,HOU,11,2022,True,1,0,0
+Marlon Humphrey,BAL,CIN,7,2021,False,1,0,0
+Lorenzo Carter,NYG,DAL,5,2021,True,1,1,0
+Anthony Brown,DAL,NYG,5,2021,False,1,45,1
+Trevon Diggs,DAL,NYG,5,2021,False,1,18,0
+Kyle Dugger,NE,MIA,17,2022,False,1,39,1
+Jonathan Jones,NE,MIA,17,2022,False,1,2,0
+Bravvion Roy,CAR,BAL,11,2022,True,1,3,0
+Jason Pierre-Paul,BAL,CAR,11,2022,False,1,3,0
+Marlon Humphrey,BAL,CAR,11,2022,False,1,0,0
+Deion Jones,CAR,SEA,3,2023,True,1,0,0
+Marcus Williams,BAL,MIA,2,2022,False,2,0,0
+Harrison Smith,MIN,WSH,9,2022,True,1,35,0
+Danny Johnson,WSH,MIN,9,2022,False,1,0,0
+Mike Edwards,TB,ATL,2,2021,False,2,46,2
+Shaquil Barrett,TB,ATL,2,2021,False,1,3,0
+Zaven Collins,ARI,WSH,1,2023,True,1,1,0
+Randy Gregory,DAL,WSH,14,2021,True,1,12,0
+Cole Holcomb,WSH,DAL,14,2021,False,1,31,1
+Landon Collins,WSH,DAL,14,2021,False,1,3,0
+Richie Grant,ATL,SEA,3,2022,True,1,12,0
+Riq Woolen,SEA,ATL,3,2022,False,1,7,0
+Alex Anzalone,DET,BUF,12,2022,False,1,4,0
+Antonio Johnson,JAX,CAR,17,2023,False,1,27,0
+Derrick Brown,CAR,NO,14,2023,True,1,2,0
+Nate Hobbs,LV,WSH,13,2021,False,1,9,0
+Paulson Adebo,NO,ATL,18,2021,True,1,17,0
+Andre Cisco,JAX,KC,2,2023,False,1,0,0
+Darious Williams,JAX,BUF,5,2023,True,1,0,0
+Talanoa Hufanga,SF,NYG,3,2023,False,1,8,0
+J.C. Jackson,NE,TEN,12,2021,False,1,0,0
+Harrison Smith,MIN,NYJ,13,2022,False,1,8,0
+Camryn Bynum,MIN,NYJ,13,2022,False,1,5,0
+Patrick Peterson,MIN,NYJ,13,2022,False,0,1,0
+Jayron Kearse,DAL,NYJ,2,2023,False,1,32,0
+Trevon Diggs,DAL,NYJ,2,2023,False,1,8,0
+Malik Hooker,DAL,NYJ,2,2023,False,1,0,0
+J.C. Jackson,LAC,MIA,1,2023,False,1,9,0
+Jerome Baker,MIA,PHI,7,2023,True,1,22,1
+Darius Slay Jr.,PHI,MIA,7,2023,False,1,16,0
+Jaycee Horn,CAR,ATL,10,2022,False,1,18,0
+Zaven Collins,ARI,SEA,9,2022,False,1,30,1
+Byron Murphy Jr.,MIN,NO,10,2023,False,1,4,0
+Mekhi Blackmon,MIN,NO,10,2023,False,1,0,0
+Tashaun Gipson Sr.,CHI,BAL,11,2021,False,1,0,0
+Geno Stone,BAL,DET,7,2023,False,1,0,0
+Kristian Fulton,TEN,HOU,8,2022,True,1,0,0
+Steven Nelson,HOU,TEN,8,2022,False,1,33,0
+Will Harris,DET,TB,6,2023,True,1,0,0
+Devin Lloyd,JAX,NYJ,16,2022,True,1,19,0
+Andre Cisco,JAX,NYJ,16,2022,True,0,4,0
+Josh Norman,SF,CHI,8,2021,True,1,40,0
+Tavierre Thomas,HOU,LAC,16,2021,False,1,48,1
+Jonathan Owens,HOU,LAC,16,2021,False,1,7,0
+Duron Harmon,LV,TEN,3,2022,True,1,13,0
+Kevin Byard III,TEN,LV,3,2022,False,1,24,0
+Xavier Woods,CAR,TB,13,2023,True,1,-3,0
+Antoine Winfield Jr.,TB,CAR,13,2023,False,1,0,0
+Ernest Jones IV,LAR,HOU,8,2021,True,1,19,0
+Cam Taylor-Britt,CIN,ARI,5,2023,True,1,11,1
+Germaine Pratt,CIN,ARI,5,2023,True,1,0,0
+K'Von Wallace,ARI,CIN,5,2023,False,1,2,0
+James Bradberry IV,NYG,WSH,2,2021,True,1,5,0
+Budda Baker,ARI,SF,9,2021,True,1,7,0
+Devin McCourty,NE,IND,15,2021,True,1,0,0
+Bobby Okereke,IND,NE,15,2021,False,1,16,0
+Shaquille Leonard,IND,NE,15,2021,False,1,-3,0
+Jessie Bates III,ATL,IND,16,2023,False,1,0,0
+Damontae Kazee,PIT,NO,10,2022,False,1,2,0
+Levi Wallace,PIT,NO,10,2022,False,1,0,0
+Denzel Ward,CLE,CIN,9,2021,True,1,99,1
+John Johnson III,CLE,CIN,9,2021,True,1,31,0
+Bobby McCain,WSH,NYG,18,2021,True,2,39,1
+John Johnson III,LAR,WSH,15,2023,False,1,2,0
+Darious Williams,JAX,CLE,14,2023,True,1,11,0
+Martin Emerson Jr.,CLE,JAX,14,2023,False,2,11,0
+Greg Newsome II,CLE,JAX,14,2023,False,1,0,0
+Quandre Diggs,SEA,LAR,15,2021,True,1,25,0
+Taylor Rapp,LAR,SEA,15,2021,False,1,0,0
+Julian Blackmon,IND,MIN,15,2022,True,1,17,1
+Rodney Thomas II,IND,MIN,15,2022,True,1,0,0
+Darrick Forrest,WSH,PHI,10,2022,True,1,0,0
+C.J. Gardner-Johnson,PHI,WSH,10,2022,False,1,0,0
+Jaire Alexander,GB,DET,9,2022,True,1,29,0
+Kerby Joseph,DET,GB,9,2022,False,2,9,0
+Aidan Hutchinson,DET,GB,9,2022,False,1,0,0
+Duron Harmon,ATL,JAX,12,2021,True,1,0,0
+Tyson Campbell,JAX,ATL,12,2021,False,1,0,0
+P.J. Williams,NO,WSH,5,2021,True,1,0,0
+Paulson Adebo,NO,WSH,5,2021,True,1,0,0
+Cole Holcomb,WSH,NO,5,2021,False,1,23,0
+Pat Surtain II,DEN,KC,13,2021,True,1,0,0
+Daniel Sorensen,KC,DEN,13,2021,False,1,75,1
+Juan Thornhill,KC,DEN,13,2021,False,1,13,0
+Desmond King II,HOU,JAX,17,2022,False,1,1,0
+Jalen Pitre,HOU,JAX,17,2022,False,1,0,0
+Jourdan Lewis,DAL,NYG,15,2021,True,1,18,0
+Malik Hooker,DAL,NYG,15,2021,True,1,0,0
+Trevon Diggs,DAL,NYG,15,2021,True,1,0,0
+Jabrill Peppers,NE,PIT,14,2023,True,1,32,0
+Mykal Walker,PIT,NE,14,2023,False,1,30,0
+Pat Surtain II,DEN,NYJ,5,2023,False,1,0,0
+Marcus Jones,NE,ARI,14,2022,True,1,18,0
+Isaiah Simmons,ARI,NE,14,2022,False,1,5,0
+Sean Murphy-Bunting,TB,CAR,17,2022,False,1,0,0
+Grant Delpit,CLE,BAL,12,2021,True,1,5,0
+Denzel Ward,CLE,BAL,12,2021,True,1,4,0
+John Johnson III,CLE,BAL,12,2021,True,1,0,0
+Ronnie Harrison Jr.,CLE,BAL,12,2021,True,1,0,0
+Tashaun Gipson Sr.,SF,DAL,5,2023,False,1,26,0
+Fred Warner,SF,DAL,5,2023,False,1,12,0
+Oren Burks,SF,DAL,5,2023,False,1,11,0
+Harrison Smith,MIN,ARI,8,2022,False,1,15,0
+Camryn Bynum,MIN,ARI,8,2022,False,1,12,0
+Micah Hyde,BUF,MIA,4,2023,False,1,23,0
+Alex Anzalone,DET,MIN,5,2021,True,1,0,0
+Eric Kendricks,MIN,DET,5,2021,False,1,22,0
+Alohi Gilman,LAC,KC,3,2021,True,1,0,0
+Asante Samuel Jr.,LAC,KC,3,2021,True,1,0,0
+Kyle Van Noy,NE,ATL,11,2021,True,1,35,1
+J.C. Jackson,NE,ATL,11,2021,True,1,3,0
+Devin McCourty,NE,ATL,11,2021,True,1,0,0
+Adrian Phillips,NE,ATL,11,2021,True,1,0,0
+A.J. Terrell,ATL,NE,11,2021,False,1,35,0
+Chandon Sullivan,GB,WSH,7,2021,False,1,0,0
+Byron Murphy Jr.,ARI,JAX,3,2021,True,2,36,1
+Andrew Wingard,JAX,ARI,3,2021,False,1,23,0
+Justin Simmons,DEN,KC,17,2022,True,1,0,0
+L'Jarius Sneed,KC,DEN,17,2022,False,1,25,0
+Sauce Gardner,NYJ,MIA,5,2022,False,1,3,0
+Tre Brown,SEA,CIN,6,2023,True,1,0,0
+Cam Taylor-Britt,CIN,SEA,6,2023,False,1,24,0
+Mike Hilton,CIN,SEA,6,2023,False,1,0,0
+Jordan Whitehead,TB,CAR,16,2021,True,1,7,0
+Alohi Gilman,LAC,KC,18,2023,False,1,0,0
+Andrew Van Ginkel,MIA,WSH,13,2023,True,1,33,1
+Johnathan Abram,NO,TB,17,2023,True,1,0,0
+Alontae Taylor,NO,TB,17,2023,True,1,0,0
+Nick Bolton,KC,LAC,11,2022,True,1,0,0
+Eddie Jackson,CHI,NYG,4,2022,True,1,-3,0
+Adoree' Jackson,NYG,PHI,16,2023,True,1,76,1
+Kelee Ringo,PHI,NYG,16,2023,False,1,0,0
+Tyrann Mathieu,NO,MIN,4,2022,False,1,3,0
+Juan Thornhill,KC,LV,18,2022,True,1,0,0
+Kyzir White,ARI,DAL,3,2023,False,1,0,0
+Levi Wallace,PIT,CIN,11,2022,False,1,3,0
+T.J. Watt,PIT,CIN,11,2022,False,1,0,0
+Jayron Kearse,DAL,KC,11,2021,True,1,34,0
+L'Jarius Sneed,KC,DAL,11,2021,False,1,2,0
+Charvarius Ward,KC,DAL,11,2021,False,1,0,0
+Jaylon Johnson,CHI,LV,7,2023,False,2,39,1
+Tremaine Edmunds,CHI,LV,7,2023,False,1,0,0
+Elijah Molden,TEN,IND,8,2021,True,1,2,1
+Kevin Byard III,TEN,IND,8,2021,True,1,14,0
+Kenny Moore II,IND,TEN,8,2021,False,1,32,0
+Tyquan Lewis,IND,TEN,8,2021,False,1,8,0
+De'Vondre Campbell,GB,WSH,7,2022,True,1,63,1
+DaRon Bland,DAL,NE,4,2023,False,2,64,1
+Cameron Sutton,PIT,LAC,11,2021,True,1,4,0
+Logan Ryan,TB,GB,3,2022,False,1,0,0
+Jaylon Johnson,CHI,MIN,12,2023,True,1,19,0
+T.J. Edwards,CHI,MIN,12,2023,True,1,0,0
+Kyler Gordon,CHI,MIN,12,2023,True,1,0,0
+Jaquan Brisker,CHI,MIN,12,2023,True,1,0,0
+Jordan Hicks,MIN,PHI,2,2022,True,1,19,0
+Darius Slay Jr.,PHI,MIN,2,2022,False,2,19,0
+Avonte Maddox,PHI,MIN,2,2022,False,1,2,0
+Kerby Joseph,DET,GB,18,2022,True,1,23,0
+Kindle Vildor,CHI,MIN,5,2022,True,1,18,0
+Byron Murphy Jr.,MIN,ATL,9,2023,True,1,18,0
+John Franklin-Myers,NYJ,HOU,12,2021,True,1,32,0
+Tavierre Thomas,HOU,NYJ,12,2021,False,1,0,0
+Ja'Quan McMillian,DEN,MIN,11,2023,False,1,9,0
+C.J. Gardner-Johnson,PHI,PIT,8,2022,False,1,14,0
+A.J. Green III,CLE,PIT,17,2021,True,1,1,0
+Ahkello Witherspoon,PIT,CLE,17,2021,False,1,0,0
+Tre Norwood,PIT,CLE,17,2021,False,1,0,0
+Ahkello Witherspoon,LAR,CIN,3,2023,True,1,0,0
+Logan Wilson,CIN,LAR,3,2023,False,2,0,0
+Amani Hooker,TEN,NO,1,2023,True,1,10,0
+Marcus Maye,NO,TEN,1,2023,False,1,5,0
+Marshon Lattimore,NO,TEN,1,2023,False,1,0,0
+Paulson Adebo,NO,TEN,1,2023,False,1,0,0
+Jerry Hughes,HOU,IND,1,2022,False,1,14,0
+Greg Newsome II,CLE,BAL,10,2023,True,1,34,1
+Mike Ford,CLE,BAL,10,2023,True,1,10,0
+Kyle Hamilton,BAL,CLE,10,2023,False,1,18,1
+Jourdan Lewis,DAL,TB,1,2021,True,1,66,0
+Trevon Diggs,DAL,TB,1,2021,True,1,0,0
+Carlton Davis III,TB,DAL,1,2021,False,1,25,0
+William Gholston,TB,BUF,8,2023,True,1,0,0
+Rodney Thomas II,IND,NE,10,2023,True,1,5,0
+Julian Blackmon,IND,NE,10,2023,True,1,4,0
+Myles Bryant,NE,IND,10,2023,False,1,6,0
+Ahkello Witherspoon,LAR,BAL,14,2023,True,1,17,0
+Tyrann Mathieu,NO,NE,5,2023,True,1,27,1
+Pete Werner,NO,NE,5,2023,True,1,0,0
+John Johnson III,CLE,DEN,7,2021,False,1,0,0
+Justin Simmons,DEN,DET,14,2021,False,1,0,0
+Brandin Echols,NYJ,MIA,15,2021,True,1,20,1
+Ashtyn Davis,NYJ,MIA,15,2021,True,1,18,0
+Mike Hilton,CIN,BAL,18,2022,False,1,5,0
+Jessie Bates III,CIN,BAL,18,2022,False,1,4,0
+Damontae Kazee,PIT,CLE,18,2022,False,1,12,0
+Levi Wallace,PIT,CLE,18,2022,False,1,3,0
+Keanu Neal,PIT,GB,10,2023,False,1,32,0
+Damontae Kazee,PIT,GB,10,2023,False,1,30,0
+Cody Barton,SEA,LAR,13,2022,True,1,10,0
+Riq Woolen,SEA,LAR,13,2022,True,1,0,0
+Bobby Wagner,LAR,SEA,13,2022,False,1,0,0
+Antonio Johnson,JAX,PIT,8,2023,True,1,23,0
+Andrew Wingard,JAX,PIT,8,2023,True,1,0,0
+Damontae Kazee,PIT,JAX,8,2023,False,1,7,0
+Shaquille Leonard,IND,WSH,8,2022,False,1,15,0
+Xavien Howard,MIA,SF,13,2022,True,1,0,0
+Fred Warner,SF,MIA,13,2022,False,1,20,0
+Deommodore Lenoir,SF,MIA,13,2022,False,1,8,0
+Jimmie Ward,SF,MIA,13,2022,False,1,0,0
+Marcus Williams,BAL,NYJ,1,2022,True,1,33,0
+D.J. Reed,NYJ,BAL,1,2022,False,1,0,0
+Jalen Thompson,ARI,LAR,12,2023,False,1,14,0
+Amani Oruwariye,DET,CHI,4,2021,True,1,0,0
+Jaycee Horn,CAR,SEA,14,2022,True,1,31,0
+CJ Henderson,CAR,SEA,14,2022,True,1,20,0
+Justin Simmons,DEN,PHI,10,2021,False,1,17,0
+Bobby Okereke,IND,NYJ,9,2021,False,1,4,0
+Charvarius Ward,KC,PIT,16,2021,False,1,0,0
+Marcus Epps,PHI,NYJ,13,2021,True,1,0,0
+Taron Johnson,BUF,KC,6,2022,True,1,2,0
+Kaiir Elam,BUF,KC,6,2022,True,1,0,0
+Joshua Williams,KC,SF,7,2022,True,1,7,0
+Juan Thornhill,KC,SF,7,2022,True,1,0,0
+Talanoa Hufanga,SF,KC,7,2022,False,1,2,0
+Josh Metellus,MIN,DET,3,2022,False,1,0,0
+Vonn Bell,CIN,BAL,16,2021,False,1,15,0
+Matt Milano,BUF,TEN,2,2022,False,1,43,1
+Jordan Poyer,BUF,TEN,2,2022,False,1,0,0
+Taylor Rapp,LAR,LV,14,2022,False,1,0,0
+Ernest Jones IV,LAR,LV,14,2022,False,1,0,0
+Nick Scott,LAR,KC,12,2022,True,1,0,0
+L'Jarius Sneed,KC,LAR,12,2022,False,1,26,0
+Nick Bolton,KC,LAR,12,2022,False,1,15,0
+Jalen Ramsey,LAR,SEA,18,2022,True,2,28,0
+Quandre Diggs,SEA,LAR,18,2022,False,1,4,0
+DeShon Elliott,DET,NE,5,2022,True,1,0,0
+Jack Jones,NE,DET,5,2022,False,1,0,0
+Jeremiah Owusu-Koramoah,CLE,HOU,16,2023,True,1,8,0
+Duron Harmon,CLE,HOU,16,2023,True,1,0,0
+DeAndre Houston-Carson,HOU,CLE,16,2023,False,1,0,0
+Derek Stingley Jr.,HOU,CLE,16,2023,False,1,0,0
+Christian Kirksey,HOU,DEN,2,2022,True,1,0,0
+Richie Grant,ATL,TB,7,2023,True,1,4,0
+D.J. Reed,SEA,DET,17,2021,False,2,9,0
+Ugo Amadi,SEA,DET,17,2021,False,1,12,0
+Xavien Howard,MIA,NE,18,2021,False,1,37,1
+Deon Bush,CHI,MIN,15,2021,False,1,27,0
+Jourdan Lewis,DAL,ATL,10,2021,False,1,4,0
+Anthony Brown,DAL,ATL,10,2021,False,1,0,0
+Trevon Diggs,DAL,ATL,10,2021,False,1,0,0
+Devin McCourty,NE,BUF,18,2022,True,1,30,0
+Matt Milano,BUF,NE,18,2022,False,1,41,0
+Tremaine Edmunds,BUF,NE,18,2022,False,1,4,0
+Tre'Davious White,BUF,NE,18,2022,False,1,0,0
+AJ Epenesa,BUF,WSH,3,2023,True,1,32,1
+Tre'Davious White,BUF,WSH,3,2023,True,1,2,0
+Micah Hyde,BUF,WSH,3,2023,True,1,1,0
+Terrel Bernard,BUF,WSH,3,2023,True,1,0,0
+Kendall Fuller,WSH,BUF,3,2023,False,1,0,0
+Logan Wilson,CIN,DET,6,2021,True,1,0,0
+Amani Oruwariye,DET,CIN,6,2021,False,1,18,0
+Jamel Dean,TB,PHI,6,2021,True,1,0,0
+Anthony Harris,PHI,TB,6,2021,False,1,2,0
+Darius Slay Jr.,PHI,TB,6,2021,False,0,4,0
+Harrison Smith,MIN,GB,1,2022,False,1,0,0
+Jonas Griffith,DEN,SF,3,2022,False,1,1,0
+Ronnie Harrison Jr.,IND,CIN,14,2023,True,1,36,1
+B.J. Hill,CIN,IND,14,2023,False,1,0,0
+Antoine Winfield Jr.,TB,NE,4,2021,True,1,0,0
+Willie Gay,KC,TEN,7,2021,True,1,1,0
+Rashaan Evans,TEN,KC,7,2021,False,1,0,0
+Andrew Adams,TEN,IND,7,2022,False,1,76,1
+David Long Jr.,TEN,IND,7,2022,False,1,4,0
+Steven Nelson,HOU,TEN,15,2023,True,1,0,0
+Elijah Molden,TEN,HOU,15,2023,False,1,44,1
+Kenny Moore II,IND,CAR,9,2023,True,2,115,2
+Segun Olubi,IND,CAR,9,2023,True,1,0,0
+Kerby Joseph,DET,LAC,10,2023,True,1,0,0
+Fred Warner,SF,JAX,10,2023,True,1,22,0
+Talanoa Hufanga,SF,JAX,10,2023,True,1,12,0
+George Odum,IND,BUF,11,2021,True,1,21,0
+Kenny Moore II,IND,BUF,11,2021,True,1,14,0
+Zaire Franklin,IND,BUF,11,2021,True,1,8,0
+Rasul Douglas,GB,TEN,11,2022,False,1,22,0
+Budda Baker,ARI,LAR,10,2022,True,1,53,0
+Stephon Gilmore,DAL,LAC,6,2023,True,1,0,0
+Isaiah Oliver,ATL,SF,6,2022,False,1,27,0
+Jaylinn Hawkins,ATL,SF,6,2022,False,1,14,0
+Rodney McLeod Jr.,PHI,WSH,17,2021,True,1,0,0
+DeAndre Houston-Carson,CHI,PHI,15,2022,False,1,18,0
+Kyler Gordon,CHI,PHI,15,2022,False,1,0,0
+C.J. Moore,DET,GB,18,2021,False,1,21,0
+Tracy Walker III,DET,GB,18,2021,False,1,5,0
+Jamal Adams,SEA,WSH,12,2021,True,1,0,0
+Nevin Lawson,JAX,MIA,6,2021,False,1,11,0
+Justin Reid,HOU,JAX,1,2021,False,1,21,0
+Vernon Hargreaves III,HOU,JAX,1,2021,False,1,18,0
+Christian Kirksey,HOU,JAX,1,2021,False,1,1,0
+Stephon Gilmore,IND,DAL,13,2022,True,1,31,0
+DaRon Bland,DAL,IND,13,2022,False,2,0,0
+Malik Hooker,DAL,IND,13,2022,False,1,26,0
+Maurice Hurst II,CLE,SEA,8,2023,True,1,0,0
+Martin Emerson Jr.,CLE,SEA,8,2023,True,1,0,0
+Julian Love,SEA,CLE,8,2023,False,1,0,0
+Riq Woolen,SEA,CLE,8,2023,False,1,0,0
+Tre Brown,SEA,DET,2,2023,True,1,40,1
+Julian Love,SEA,SF,14,2023,True,1,7,0
+Ji'Ayir Brown,SF,SEA,14,2023,False,1,0,0
+Fred Warner,SF,SEA,14,2023,False,1,-3,0
+Dre Greenlaw,SF,SEA,14,2023,False,0,16,0
+Darnell Savage,GB,CHI,6,2021,True,1,0,0
+Christian Rozeboom,LAR,ARI,6,2023,False,1,0,0
+DeMarcus Lawrence,DAL,WSH,16,2021,False,1,40,1
+Trevon Diggs,DAL,WSH,16,2021,False,1,0,0
+Byron Murphy Jr.,MIN,CHI,6,2023,True,1,37,0
+Jordan Hicks,MIN,CHI,6,2023,True,1,9,0
+Logan Wilson,CIN,SF,8,2023,True,1,16,0
+Germaine Pratt,CIN,SF,8,2023,True,1,9,0
+J.C. Jackson,NE,CAR,9,2021,True,2,88,1
+Jamie Collins Sr.,NE,CAR,9,2021,True,1,1,0
+Stephon Gilmore,CAR,NE,9,2021,False,1,13,0
+Darius Slay Jr.,PHI,NE,1,2023,True,1,70,1
+Foyesade Oluokun,JAX,NO,7,2023,True,1,24,1
+Antoine Winfield Jr.,TB,IND,12,2021,True,1,30,0
+Pierre Desir,TB,IND,12,2021,True,1,0,0
+Isaiah Rodgers Sr.,IND,TB,12,2021,False,1,0,0
+Devin Lloyd,JAX,IND,2,2022,False,1,13,0
+Rayshawn Jenkins,JAX,IND,2,2022,False,1,10,0
+Andre Cisco,JAX,IND,2,2022,False,1,1,0
+Tyrann Mathieu,NO,LV,8,2022,False,1,0,0
+Tyson Campbell,JAX,HOU,15,2021,False,1,3,0
+Kerby Joseph,DET,MIN,16,2023,True,2,22,0
+Ifeatu Melifonwu,DET,MIN,16,2023,True,1,11,0
+Brian Branch,DET,MIN,16,2023,True,1,0,0
+Jeremy Chinn,CAR,BUF,15,2021,True,1,0,0
+A.J. Klein,BUF,CAR,15,2021,False,1,12,0
+Greedy Williams,CLE,MIN,4,2021,True,1,0,0
+Reed Blankenship,PHI,TB,3,2023,True,1,0,0
+Devin White,TB,PHI,3,2023,False,1,26,0
+Dee Delaney,TB,PHI,3,2023,False,1,0,0
+Tremaine Edmunds,CHI,DET,11,2023,True,1,10,0
+Tyrique Stevenson,CHI,DET,11,2023,True,1,5,0
+T.J. Edwards,CHI,DET,11,2023,True,1,2,0
+Anthony Hitchens,KC,LAC,15,2021,True,1,0,0
+Uchenna Nwosu,LAC,KC,15,2021,False,1,2,0
+Nick Scott,LAR,SEA,5,2021,True,1,3,0
+Troy Reeder,LAR,SEA,5,2021,True,1,0,0
+Quandre Diggs,SEA,LAR,5,2021,False,1,0,0
+Kevin Byard III,TEN,JAX,5,2021,True,1,0,0
+Rodney McLeod Jr.,IND,KC,3,2022,False,1,0,0
+Vonn Bell,CAR,NO,2,2023,False,1,11,0
+L'Jarius Sneed,KC,GB,9,2021,False,1,0,0
+Minkah Fitzpatrick,PIT,CIN,1,2022,True,1,31,1
+Cameron Sutton,PIT,CIN,1,2022,True,1,0,0
+T.J. Watt,PIT,CIN,1,2022,True,1,0,0
+Ahkello Witherspoon,PIT,CIN,1,2022,True,1,0,0
+Terrance Mitchell,TEN,DEN,10,2022,False,1,1,0
+Caden Sterns,DEN,NYJ,3,2021,False,1,46,0
+Justin Simmons,DEN,NYJ,3,2021,False,1,35,0
+Josh Allen,JAX,CIN,13,2023,False,1,8,0
+Cam Taylor-Britt,CIN,BUF,9,2023,False,1,0,0
+Teair Tart,TEN,IND,4,2022,True,1,0,0
+Micah McFadden,NYG,BUF,6,2023,True,1,5,0
+Denzel Ward,CLE,IND,7,2023,True,1,20,0
+Julian Blackmon,IND,CLE,7,2023,False,1,0,0
+Rodney Thomas II,IND,CLE,7,2023,False,1,0,0
+Jerry Jacobs,DET,CAR,5,2023,False,1,11,0
+Aidan Hutchinson,DET,CAR,5,2023,False,1,6,0
+Dax Hill,CIN,CLE,1,2023,True,1,20,0
+Jordan Fuller,LAR,BAL,17,2021,True,1,34,0
+Chuck Clark,BAL,LAR,17,2021,False,2,17,1
+Jaire Alexander,GB,BUF,8,2022,True,1,3,0
+Rasul Douglas,GB,BUF,8,2022,True,1,-1,0
+Matt Milano,BUF,GB,8,2022,False,1,0,0
+Rodney Thomas II,IND,DEN,5,2022,True,1,35,0
+Stephon Gilmore,IND,DEN,5,2022,True,1,0,0
+Caden Sterns,DEN,IND,5,2022,False,2,25,0
+David Long Jr.,TEN,WSH,5,2022,True,1,0,0
+Lonnie Johnson Jr.,HOU,ARI,7,2021,True,1,15,0
+Alex Austin,NE,BUF,17,2023,True,1,0,0
+Rasul Douglas,BUF,NE,17,2023,False,2,50,1
+Ed Oliver,BUF,NE,17,2023,False,1,0,0
+Jordan Whitehead,NYJ,LV,10,2023,True,1,6,0
+Robert Spillane,LV,NYJ,10,2023,False,1,25,0
+Jamal Adams,SEA,GB,10,2021,True,1,0,0
+Adrian Amos,GB,SEA,10,2021,False,1,0,0
+Kevin King,GB,SEA,10,2021,False,1,0,0
+Rudy Ford,GB,DAL,10,2022,False,2,68,0
+Trenton Thompson,PIT,CIN,12,2023,True,1,6,0
+Ji'Ayir Brown,SF,TB,11,2023,False,1,0,0
+Jaylinn Hawkins,ATL,CHI,11,2022,False,1,0,0
+Jabrill Peppers,NE,BUF,7,2023,False,1,1,0
+Jack Sanborn,CHI,KC,3,2023,True,1,42,0
+Quindell Johnson,CHI,KC,3,2023,True,1,0,0
+Mike Edwards,KC,CHI,3,2023,False,1,16,0
+Jerry Jacobs,DET,NYJ,15,2022,True,1,38,0
+Charvarius Ward,SF,ARI,15,2023,True,2,79,1
+Jessie Bates III,ATL,NYJ,13,2023,True,1,0,0
+Nasir Adderley,LAC,HOU,4,2022,True,1,30,0
+Bryce Callahan,LAC,HOU,4,2022,True,1,9,0
+Joey Blount,ARI,PHI,17,2023,True,1,0,0
+Sydney Brown,PHI,ARI,17,2023,False,1,99,1
+Kyzir White,LAC,BAL,6,2021,True,2,22,0
+DeShon Elliott,BAL,LAC,6,2021,False,1,0,0
+Foyesade Oluokun,ATL,MIA,7,2021,True,1,56,0
+Jaylinn Hawkins,ATL,MIA,7,2021,True,1,0,0
+Xavien Howard,MIA,ATL,7,2021,False,1,0,0
+Jack Jones,NE,GB,4,2022,True,1,40,1
+Jaire Alexander,GB,MIA,16,2022,True,1,23,0
+De'Vondre Campbell,GB,MIA,16,2022,True,1,14,0
+Rasul Douglas,GB,MIA,16,2022,True,1,5,0
+Kader Kohou,MIA,GB,16,2022,False,1,0,0
+Jack Jones,LV,LAC,15,2023,False,1,16,1
+J.C. Jackson,NE,NYJ,2,2021,True,2,1,0
+Devin McCourty,NE,NYJ,2,2021,True,1,22,0
+Adrian Phillips,NE,NYJ,2,2021,True,1,1,0
+Travin Howard,LAR,MIN,16,2021,True,1,19,0
+Anthony Barr,MIN,LAR,16,2021,False,2,11,0
+Xavier Woods,MIN,LAR,16,2021,False,1,15,0
+Julian Okwara,DET,PIT,10,2021,True,1,9,0
+Jonathan Jones,NE,MIA,1,2021,False,1,0,0
+James Bradberry IV,NYG,CAR,7,2021,False,1,14,0
+Alex Singleton,PHI,NYG,16,2021,False,1,29,1
+Rodney McLeod Jr.,PHI,NYG,16,2021,False,1,24,0
+Keanu Neal,TB,ARI,16,2022,True,1,0,0
+Marco Wilson,ARI,TB,16,2022,False,2,39,0
+Tre'von Moehrig,LV,DEN,18,2023,False,1,0,0
+Derwin James Jr.,LAC,DEN,12,2021,True,1,5,0
+Pat Surtain II,DEN,LAC,12,2021,False,2,70,1
+Jordan Fuller,LAR,DAL,8,2023,True,1,18,0
+DaRon Bland,DAL,LAR,8,2023,False,1,30,1
+Bashaud Breeland,MIN,CAR,6,2021,True,1,8,0
+Derwin James Jr.,LAC,ARI,12,2022,True,1,0,0
+Jalen Ramsey,LAR,DET,7,2021,False,1,25,0
+Nick Scott,LAR,DET,7,2021,False,1,0,0
+Riq Woolen,SEA,ARI,6,2022,False,1,0,0
+Ambry Thomas,SF,SEA,12,2023,True,1,2,0
+Jordyn Brooks,SEA,SF,12,2023,False,1,12,1
+Henry Black,GB,ARI,8,2021,True,1,0,0
+Rasul Douglas,GB,ARI,8,2021,True,1,0,0
+Mykal Walker,ATL,WSH,12,2022,True,1,12,0
+Kendall Fuller,WSH,ATL,12,2022,False,1,0,0
+Tashaun Gipson Sr.,SF,TB,14,2022,False,1,36,0
+Dre Greenlaw,SF,TB,14,2022,False,1,0,0
+Nate Landman,ATL,ARI,10,2023,True,1,25,0
+Willie Gay,KC,DEN,14,2022,True,1,47,1
+L'Jarius Sneed,KC,DEN,14,2022,True,1,6,0
+Josey Jewell,DEN,KC,14,2022,False,2,21,0
+Pat Surtain II,DEN,KC,14,2022,False,1,0,0
+Andre Cisco,JAX,TEN,18,2023,True,1,29,0
+Terrell Edmunds,TEN,JAX,18,2023,False,1,2,0
+Sean Murphy-Bunting,TEN,JAX,18,2023,False,1,2,0
+Xavier Rhodes,IND,SF,7,2021,True,1,4,0
+Khari Willis,IND,SF,7,2021,True,1,0,0
+Amani Oruwariye,DET,CHI,12,2021,False,1,0,0
+C.J. Gardner-Johnson,PHI,DAL,6,2022,False,2,15,0
+Darius Slay Jr.,PHI,DAL,6,2022,False,1,-2,0
+Jaylen Watson,KC,LAC,2,2022,False,1,99,1
+Ashtyn Davis,NYJ,KC,4,2023,False,1,1,0
+C.J. Mosley,NYJ,KC,4,2023,False,1,0,0
+Kendall Fuller,WSH,ATL,6,2023,True,1,23,0
+Jamin Davis,WSH,ATL,6,2023,True,1,0,0
+Benjamin St-Juste,WSH,ATL,6,2023,True,1,0,0
+Kareem Jackson,DEN,JAX,2,2021,True,1,7,0
+Pat Surtain II,DEN,JAX,2,2021,True,1,0,0
+Jaire Alexander,GB,CHI,13,2022,True,1,4,0
+Keisean Nixon,GB,CHI,13,2022,True,1,1,0
+Landon Collins,NYG,IND,17,2022,False,1,52,1
+Jalen Thompson,ARI,CHI,16,2023,True,1,0,0
+Budda Baker,ARI,DEN,15,2022,True,1,1,0
+Justin Simmons,DEN,ARI,15,2022,False,2,43,0
+Pat Surtain II,DEN,ARI,15,2022,False,1,-3,0
+DaRon Bland,DAL,JAX,15,2022,True,1,15,0
+Rayshawn Jenkins,JAX,DAL,15,2022,False,2,54,1
+Dane Belton,NYG,HOU,10,2022,False,1,0,0
+Willie Gay,KC,NE,15,2023,True,1,24,0
+Marte Mapu,NE,KC,15,2023,False,1,20,0
+Jahlani Tavai,NE,KC,15,2023,False,1,2,0
+Denzel Ward,CLE,ATL,4,2022,True,1,0,0
+Dee Alford,ATL,CLE,4,2022,False,1,0,0
+De'Vondre Campbell,GB,CIN,5,2021,True,1,13,0
+Adrian Amos,GB,CIN,5,2021,True,1,0,0
+Chidobe Awuzie,CIN,GB,5,2021,False,1,42,0
+Micah Hyde,BUF,NE,16,2021,True,2,22,0
+Brian Branch,DET,NO,13,2023,True,1,13,0
+Buster Skrine,TEN,JAX,14,2021,False,1,17,0
+Jayon Brown,TEN,JAX,14,2021,False,1,2,0
+Rashaan Evans,TEN,JAX,14,2021,False,1,1,0
+Kristian Fulton,TEN,JAX,14,2021,False,1,0,0
+James Bradberry IV,NYG,NO,4,2021,True,1,0,0
+Marcus Williams,NO,NYG,4,2021,False,1,3,0
+Ahkello Witherspoon,PIT,MIN,14,2021,True,2,45,0
+Bashaud Breeland,MIN,PIT,14,2021,False,1,18,0
+Andrew Adams,TB,CAR,18,2021,False,1,17,0
+AJ Epenesa,BUF,KC,14,2023,True,1,6,0
+Chamarri Conner,KC,BUF,14,2023,False,1,4,0
+Aidan Hutchinson,DET,CHI,17,2022,False,1,5,0
+Brandin Echols,NYJ,TB,17,2021,False,1,30,0
+Julian Blackmon,IND,PIT,15,2023,False,1,25,0
+Nick Cross,IND,PIT,15,2023,False,1,18,0
+Rasul Douglas,GB,CHI,14,2021,False,1,55,1
+Chandon Sullivan,GB,CHI,14,2021,False,1,1,0
+Desmond King II,HOU,TEN,11,2021,True,2,25,0
+Kamu Grugier-Hill,HOU,TEN,11,2021,True,1,82,0
+Terrance Mitchell,HOU,TEN,11,2021,True,1,22,0
+Keisean Nixon,GB,KC,13,2023,False,1,2,0
+Grant Delpit,CLE,WSH,17,2022,True,2,0,0
+Denzel Ward,CLE,WSH,17,2022,True,1,0,0
+James Bradberry IV,PHI,DET,1,2022,True,1,27,1
+Cameron Heyward,PIT,CHI,9,2021,False,1,0,0
+Andre Cisco,JAX,KC,10,2022,True,1,8,0
+Darrick Forrest,WSH,SF,16,2022,True,1,0,0
+Jimmie Ward,SF,WSH,16,2022,False,1,0,0
+Jack Jones,LV,KC,16,2023,True,1,33,1
+Mike Hilton,CIN,CLE,18,2021,True,1,35,0
+Deommodore Lenoir,SF,LAR,2,2023,True,1,21,0
+Isaiah Oliver,SF,LAR,2,2023,True,1,3,0
+Marcus Peters,LV,DET,8,2023,True,1,75,1
+Kerby Joseph,DET,LV,8,2023,False,1,15,0
+Quandre Diggs,SEA,NYJ,17,2022,False,1,27,0
+Michael Jackson,SEA,NYJ,17,2022,False,1,22,0
+Brandon Jones,MIA,NYJ,15,2023,False,2,40,0
+Minkah Fitzpatrick,PIT,ATL,13,2022,True,1,16,0
+Denzel Perryman,LV,PIT,16,2022,True,1,24,0
+Arthur Maulet,PIT,LV,16,2022,False,1,12,0
+Cameron Sutton,PIT,LV,16,2022,False,1,0,0
+Minkah Fitzpatrick,PIT,LV,16,2022,False,1,0,0
+Tre'von Moehrig,LV,LAC,4,2023,True,1,16,0
+Asante Samuel Jr.,LAC,LV,4,2023,False,1,8,0
+Josh Sweat,PHI,DAL,16,2022,True,1,42,1
+Jayron Kearse,DAL,PHI,16,2022,False,1,2,0
+DaRon Bland,DAL,PHI,16,2022,False,1,0,0
+Lamarcus Joyner,NYJ,DEN,7,2022,True,1,27,0
+Jonathan Jones,NE,MIN,12,2022,True,1,55,0
+Derek Stingley Jr.,HOU,JAX,12,2023,False,1,14,0
+Kyle Dugger,NE,NYJ,7,2021,False,1,14,0
+J.C. Jackson,NE,NYJ,7,2021,False,1,0,0
+Eddie Jackson,CHI,DAL,8,2022,True,1,21,0
+Theo Jackson,MIN,PHI,2,2023,True,1,0,0
+Jason Pinnock,NYG,GB,14,2023,False,1,21,0
+Dane Belton,NYG,PHI,18,2022,True,1,0,0
+Christian Harris,HOU,TEN,16,2022,True,1,20,0
+Jalen Pitre,HOU,TEN,16,2022,True,1,6,0
+Jack Gibbens,TEN,HOU,16,2022,False,1,7,0
+Kyle Dugger,NE,MIA,8,2023,True,1,15,0
+Jalen Ramsey,MIA,NE,8,2023,False,1,49,0
+Jonathan Jones,NE,IND,9,2022,False,1,17,1
+DaRon Bland,DAL,CAR,11,2023,True,1,30,1
+Marcus Peters,BAL,NE,3,2022,True,1,8,0
+Josh Bynes,BAL,NE,3,2022,True,1,0,0
+Marlon Humphrey,BAL,NE,3,2022,True,1,0,0
+Jonathan Jones,NE,BAL,3,2022,False,1,15,0
+Jonathon Cooper,DEN,LAC,14,2023,True,1,4,0
+Michael Davis,LAC,DEN,14,2023,False,1,0,0
+Eli Apple,CIN,LV,11,2021,True,1,0,0
+DaRon Bland,DAL,WSH,4,2022,False,1,4,0
+Trevon Diggs,DAL,WSH,4,2022,False,1,0,0
+Kevin Byard III,TEN,LAR,9,2021,True,1,24,1
+David Long Jr.,TEN,LAR,9,2021,True,1,6,0
+Jalen Ramsey,LAR,TEN,9,2021,False,1,6,0
+Kyle Hamilton,BAL,SF,16,2023,True,2,7,0
+Marcus Williams,BAL,SF,16,2023,True,1,22,0
+Patrick Queen,BAL,SF,16,2023,True,1,21,0
+Marlon Humphrey,BAL,SF,16,2023,True,1,3,0
+Patrick Peterson,MIN,BUF,10,2022,True,2,46,0
+Christian Benford,BUF,MIN,10,2022,False,1,35,0
+Dane Jackson,BUF,MIN,10,2022,False,1,11,0
+Amani Hooker,TEN,SF,16,2021,False,1,21,0
+Janoris Jenkins,TEN,SF,16,2021,False,1,0,0
+Dax Hill,CIN,TEN,4,2023,True,1,0,0
+Chris Harris Jr.,LAC,CIN,13,2021,True,1,0,0
+Michael Davis,LAC,CIN,13,2021,True,1,0,0
+Chidobe Awuzie,CIN,LAC,13,2021,False,1,0,0
+Demario Davis,NO,TB,13,2022,True,1,4,0
+Mike Edwards,TB,CLE,12,2022,True,1,0,0
+Akayleb Evans,MIN,CIN,15,2023,True,1,1,0
+Mike Hilton,CIN,MIN,15,2023,False,1,16,0
+B.J. Hill,CIN,MIN,15,2023,False,1,0,0
+Reed Blankenship,PHI,WSH,8,2023,True,1,17,0
+Tony Adams,NYJ,PHI,6,2023,False,1,45,0
+Quinnen Williams,NYJ,PHI,6,2023,False,1,7,0
+Bryce Hall,NYJ,PHI,6,2023,False,1,5,0
+Talanoa Hufanga,SF,LAC,10,2022,False,1,6,0
+Ja'Sir Taylor,LAC,CHI,8,2023,False,1,8,0
+Derwin James Jr.,LAC,CHI,8,2023,False,1,6,0
+Trevon Diggs,DAL,PHI,3,2021,False,1,59,1
+Anthony Brown,DAL,PHI,3,2021,False,1,0,0
+Jalen Mills,NE,PIT,2,2022,True,1,13,0
+Minkah Fitzpatrick,PIT,NE,2,2022,False,1,13,0
+Patrick Peterson,MIN,NYG,16,2022,False,1,11,0
+Matt Milano,BUF,LV,2,2023,False,1,3,0
+Terrel Bernard,BUF,LV,2,2023,False,1,0,0
+Sione Takitaki,CLE,ARI,9,2023,False,1,0,0
+Denzel Ward,CLE,ARI,9,2023,False,1,0,0
+Emmanuel Forbes Jr.,WSH,DEN,2,2023,True,1,3,0
+Josh Metellus,MIN,GB,8,2023,True,1,43,0
+Jonathan Greenard,HOU,IND,18,2022,True,1,39,1
+Christian Kirksey,HOU,IND,18,2022,True,1,18,0
+Rodney McLeod Jr.,IND,HOU,18,2022,False,1,27,1
+Rodney Thomas II,IND,HOU,18,2022,False,1,11,0
+T.J. Watt,PIT,LAR,7,2023,True,1,24,0
+Isaiah Rodgers Sr.,IND,LV,17,2021,False,1,12,0
+Shaquille Leonard,IND,LV,17,2021,False,1,7,0
+Emmanuel Moseley,SF,CAR,5,2022,True,1,41,1
+Deion Jones,CLE,CIN,14,2022,True,1,5,0
+Jessie Bates III,CIN,CLE,14,2022,False,1,7,0
+Zach Sieler,MIA,TEN,14,2023,False,1,5,1
+Nahshon Wright,DAL,TEN,17,2022,True,1,0,0
+Kevin Byard III,TEN,DAL,17,2022,False,2,30,0
+Derrick Brown,CAR,NO,3,2022,False,1,0,0
+Jaycee Horn,CAR,NO,3,2022,False,1,0,0
+Anthony Averett,BAL,LV,1,2021,True,1,0,0
+Levi Wallace,PIT,LV,3,2023,True,2,0,0
+Patrick Peterson,PIT,LV,3,2023,True,1,0,0
+DeAndre Houston-Carson,CHI,LV,5,2021,True,1,0,0
+Devin McCourty,NE,NYJ,8,2022,True,2,36,0
+Ja'Whaun Bentley,NE,NYJ,8,2022,True,1,7,0
+Michael Carter II,NYJ,NE,8,2022,False,1,0,0
+Malcolm Jenkins,NO,NE,3,2021,True,1,34,1
+P.J. Williams,NO,NE,3,2021,True,1,46,0
+Marshon Lattimore,NO,NE,3,2021,True,1,20,0
+Amani Oruwariye,DET,CLE,11,2021,True,1,5,0
+AJ Parker,DET,CLE,11,2021,True,1,0,0
+Malcolm Smith,CLE,DET,11,2021,False,1,1,0
+Denzel Ward,CLE,DET,11,2021,False,1,0,0
+Ashtyn Davis,NYJ,CLE,2,2022,True,1,14,0
+Alohi Gilman,LAC,CLE,5,2022,True,1,18,0
+Xavier Woods,CAR,ATL,15,2023,False,1,2,0
+Reed Blankenship,PHI,GB,12,2022,False,1,4,0
+Josiah Scott,PHI,GB,12,2022,False,1,0,0
+Jaire Alexander,GB,CHI,2,2022,False,1,0,0
+Anthony Averett,BAL,DEN,4,2021,True,1,0,0
+Tre Flowers,CIN,TB,15,2022,True,1,0,0
+Germaine Pratt,CIN,TB,15,2022,True,1,0,0
+Carlton Davis III,TB,CIN,15,2022,False,1,0,0
+Rayshawn Jenkins,JAX,BAL,15,2023,False,1,18,0
+William Jackson III,WSH,LAC,1,2021,False,1,0,0
+Foyesade Oluokun,ATL,DET,16,2021,False,1,6,0
+Matt Milano,BUF,NYJ,1,2023,True,1,13,0
+Jordan Whitehead,NYJ,BUF,1,2023,False,3,0,0
+Krys Barnes,ARI,HOU,11,2023,True,1,46,0
+Antonio Hamilton Sr.,ARI,HOU,11,2023,True,1,0,0
+Jalen Thompson,ARI,HOU,11,2023,True,1,0,0
+Derek Stingley Jr.,HOU,ARI,11,2023,False,1,0,0
+Anthony Averett,BAL,CLE,14,2021,True,1,21,0
+Julian Love,NYG,BAL,6,2022,False,1,27,0
+Xavien Howard,MIA,CAR,12,2021,False,1,16,0
+Nik Needham,MIA,CAR,12,2021,False,1,0,0
+Jevon Holland,MIA,CAR,12,2021,False,1,0,0
+De'Vondre Campbell,GB,DET,2,2021,False,1,2,0
+Riq Woolen,SEA,DET,4,2022,True,1,40,1
+Trevon Diggs,DAL,CAR,4,2021,False,2,23,0
+Amik Robertson,LV,ARI,2,2022,False,1,7,0
+Sauce Gardner,NYJ,BUF,9,2022,False,1,16,0
+Jordan Whitehead,NYJ,BUF,9,2022,False,1,5,0
+Ernest Jones IV,LAR,ARI,14,2021,True,1,31,0
+Leonard Floyd,LAR,ARI,14,2021,True,1,11,0
+D'Anthony Bell,CLE,CIN,18,2023,True,1,2,0
+Logan Wilson,CIN,CLE,18,2023,False,1,26,0
+Jordan Battle,CIN,CLE,18,2023,False,1,0,0
+Jordan Poyer,BUF,MIA,8,2021,False,1,26,0
+Caden Sterns,DEN,DAL,9,2021,True,1,1,0
+Xavien Howard,MIA,NE,2,2023,True,1,0,0
+Christian Gonzalez,NE,MIA,2,2023,False,1,0,0
+Carlton Davis III,TB,IND,12,2023,True,1,3,0
+Ronnie Harrison Jr.,IND,TB,12,2023,False,1,9,0
+Troy Reeder,LAR,IND,2,2021,True,1,2,0
+Jalen Ramsey,LAR,IND,2,2021,True,1,0,0
+Khari Willis,IND,LAR,2,2021,False,1,0,0
+Darious Williams,JAX,ATL,4,2023,False,1,61,1
+Andre Cisco,JAX,ATL,4,2023,False,1,18,0
+DaRon Bland,DAL,WSH,12,2023,False,1,63,1
+Eric Wilson,PHI,KC,4,2021,False,1,7,0
+Jeff Okudah,DET,CHI,10,2022,True,1,20,1
+Tyrann Mathieu,KC,BAL,2,2021,True,2,50,1
+Tavon Young,BAL,KC,2,2021,False,1,0,0
+Emmanuel Moseley,SF,LAR,18,2021,True,1,0,0
+Ambry Thomas,SF,LAR,18,2021,True,1,0,0
+Jalen Ramsey,LAR,SF,18,2021,False,1,10,0
+Taylor Rapp,LAR,SF,18,2021,False,1,0,0
+Tyrann Mathieu,NO,ATL,18,2023,False,1,74,0
+Alontae Taylor,NO,ATL,18,2023,False,1,16,0
+Antoine Winfield Jr.,TB,DAL,1,2022,True,1,15,0
+Donovan Wilson,DAL,TB,1,2022,False,1,0,0
+Shaquil Barrett,TB,CHI,2,2023,False,1,4,1
+Christian Izien,TB,CHI,2,2023,False,1,4,0
+Isaiah Rodgers Sr.,IND,HOU,6,2021,False,1,12,0
+Shaquille Leonard,IND,HOU,6,2021,False,1,4,0
+P.J. Locke,DEN,GB,7,2023,False,1,14,0
+Tyrann Mathieu,KC,LV,14,2021,False,1,6,0
+Justin Houston,BAL,NO,9,2022,True,1,5,0
+Mykal Walker,ATL,CAR,14,2021,True,1,66,1
+A.J. Terrell,ATL,CAR,14,2021,True,1,0,0
+Casey Hayward,LV,LAC,18,2021,False,1,0,0
+Jordan Fuller,LAR,NYG,17,2023,True,1,0,0
+Dane Belton,NYG,LAR,17,2023,False,2,22,0
+Daniel Sorensen,KC,LV,10,2021,True,1,0,0
+Cody Barton,SEA,TB,10,2022,True,1,1,0
+Riq Woolen,SEA,TB,10,2022,True,1,0,0
+Justin Reid,HOU,CLE,2,2021,True,1,24,0
+Malcolm Smith,CLE,HOU,2,2021,False,1,0,0
+Kenneth Murray Jr.,LAC,MIN,3,2023,True,1,0,0
+Quan Martin,WSH,NE,9,2023,True,1,0,0
+Kyle Dugger,NE,WSH,9,2023,False,1,20,0
+Tashaun Gipson Sr.,SF,ARI,18,2022,False,2,35,0
+George Odum,SF,ARI,18,2022,False,1,25,0
+Jordan Poyer,BUF,TEN,6,2021,True,1,17,0
+Kevin Byard III,TEN,BUF,6,2021,False,1,16,0
+Nik Needham,MIA,NO,16,2021,True,1,28,1
+Brandon Jones,MIA,NO,16,2021,True,1,8,0
+Marshon Lattimore,NO,MIA,16,2021,False,1,0,0
+Roquan Smith,BAL,MIA,17,2023,False,1,30,0
+Geno Stone,BAL,MIA,17,2023,False,1,4,0
+Logan Wilson,CIN,PIT,3,2021,True,2,13,0
+Terrell Edmunds,PIT,CIN,3,2021,False,1,15,0
+Blake Cashman,HOU,JAX,3,2023,True,1,0,0
+Taylor Rapp,LAR,GB,15,2022,True,1,18,0
+Rasul Douglas,GB,LAR,15,2022,False,1,0,0
+Marcus Williams,NO,GB,1,2021,False,1,53,0
+Paulson Adebo,NO,GB,1,2021,False,1,33,0
+Budda Baker,ARI,SF,5,2021,False,1,17,0
+Adrian Phillips,NE,LAC,8,2021,True,2,38,1
+Josh Allen,JAX,BUF,9,2021,False,1,11,0
+Rudy Ford,JAX,BUF,9,2021,False,1,8,0
+Eric Murray,HOU,MIA,9,2021,True,1,0,0
+Maliek Collins,HOU,MIA,9,2021,True,1,0,0
+Justin Coleman,MIA,HOU,9,2021,False,1,0,0
+Jerome Baker,MIA,HOU,9,2021,False,1,0,0
+Jevon Holland,MIA,HOU,9,2021,False,1,0,0
+C.J. Gardner-Johnson,PHI,ARI,5,2022,True,1,0,0
+Sean Murphy-Bunting,TB,KC,4,2022,False,1,33,0
+Rasul Douglas,GB,CLE,16,2021,False,2,17,0
+Chandon Sullivan,GB,CLE,16,2021,False,1,13,0
+Darnell Savage,GB,CLE,16,2021,False,1,0,0
+Bryce Callahan,LAC,LV,13,2022,True,1,26,1
+Camryn Bynum,MIN,BAL,9,2021,True,1,27,0
+Anthony Barr,MIN,BAL,9,2021,True,1,0,0
+Cameron Sutton,DET,MIN,18,2023,False,1,23,0
+C.J. Gardner-Johnson,DET,MIN,18,2023,False,1,0,0
+Tyson Campbell,JAX,IND,1,2023,True,1,0,0
+Tony Brown,IND,JAX,1,2023,False,1,34,0
+Budda Baker,ARI,CHI,13,2021,True,1,77,0
+Zach Allen,ARI,CHI,13,2021,True,1,25,0
+Byron Murphy Jr.,ARI,CHI,13,2021,True,1,13,0
+Jalen Thompson,ARI,CHI,13,2021,True,1,6,0
+Trevon Diggs,DAL,NE,6,2021,True,1,42,1
+Kyle Dugger,NE,DAL,6,2021,False,1,29,0
+Logan Wilson,CIN,NYJ,3,2022,True,1,41,0
+Jessie Bates III,CIN,NYJ,3,2022,True,1,1,0
+Levi Wallace,BUF,MIA,2,2021,True,1,14,0
+Xavien Howard,MIA,BUF,2,2021,False,1,1,0
+Geno Stone,BAL,CIN,2,2023,True,1,36,0
+Vonn Bell,CIN,MIA,4,2022,False,2,46,0
+Kenny Moore II,IND,TEN,3,2021,True,1,32,0
+Shaquille Leonard,IND,TEN,3,2021,True,1,4,0
+Logan Wilson,CIN,CHI,2,2021,True,1,18,0
+Roquan Smith,CHI,CIN,2,2021,False,1,53,1
+Angelo Blackson,CHI,CIN,2,2021,False,1,6,0
+Jaylon Johnson,CHI,CIN,2,2021,False,1,3,0
+Jalen Mills,NE,CLE,6,2022,True,1,15,0
+Kyle Dugger,NE,CLE,6,2022,True,1,0,0
+Kyle Dugger,NE,LV,15,2022,True,1,16,1
+C.J. Gardner-Johnson,NO,CAR,17,2021,False,1,18,0
+Justin Simmons,DEN,KC,6,2023,True,1,6,0
+Justin Reid,KC,DEN,6,2023,False,1,11,0
+Nick Bolton,KC,DEN,6,2023,False,1,1,0
+Brian Branch,DET,KC,1,2023,True,1,50,1
+Dee Delaney,TB,CHI,7,2021,False,1,26,0
+Jordan Whitehead,TB,CHI,7,2021,False,1,17,0
+Pierre Desir,TB,CHI,7,2021,False,1,0,0
+Richard Sherman,TB,BUF,14,2021,False,1,0,0
+Derek Stingley Jr.,HOU,DEN,13,2023,False,2,3,0
+Jimmie Ward,HOU,DEN,13,2023,False,1,0,0
+Drue Tranquill,LAC,LV,1,2022,False,1,20,0
+Bryce Callahan,LAC,LV,1,2022,False,1,2,0
+Asante Samuel Jr.,LAC,LV,1,2022,False,1,0,0
+Kenny Moore II,IND,LAR,4,2023,False,1,0,0
+Tershawn Wharton,KC,WSH,6,2021,True,1,0,0
+Bobby McCain,WSH,KC,6,2021,False,1,5,0
+Kendall Fuller,WSH,KC,6,2021,False,1,0,0
+Emmanuel Ogbah,MIA,DEN,3,2023,False,1,5,0
+Justin Coleman,MIA,BAL,10,2021,False,1,0,0
+Jessie Bates III,ATL,DET,3,2023,True,1,0,0
+Donte Jackson,CAR,ARI,10,2021,True,1,21,0
+Jalen Thompson,ARI,CAR,10,2021,False,1,10,0
+Roquan Smith,BAL,PIT,14,2022,True,1,19,0
+Marcus Williams,BAL,PIT,14,2022,True,1,0,0
+Patrick Queen,BAL,PIT,14,2022,True,1,0,0
+Denzel Perryman,LV,SEA,12,2022,True,1,24,0
+Quandre Diggs,SEA,LV,12,2022,False,2,39,0
+Tyrique Stevenson,CHI,ATL,17,2023,False,2,7,0
+T.J. Edwards,CHI,ATL,17,2023,False,1,2,0
+Kyler Gordon,CHI,ATL,17,2023,False,1,0,0
+Jessie Bates III,CIN,CAR,9,2022,False,1,16,0
+Germaine Pratt,CIN,CAR,9,2022,False,1,3,0
+Isaiah Simmons,ARI,NO,7,2022,False,1,56,1
+Marco Wilson,ARI,NO,7,2022,False,1,38,1
+Antonio Hamilton Sr.,ARI,NO,7,2022,False,1,0,0
+Jamel Dean,TB,MIA,5,2021,False,1,6,0
+Carlton Davis III,TB,ATL,14,2023,True,1,0,0
+CJ Henderson,CAR,ATL,8,2022,True,1,54,0
+Donte Jackson,CAR,ATL,8,2022,True,1,0,0
+Lorenzo Carter,ATL,CAR,8,2022,False,1,28,1
+Nick Vigil,MIN,ARI,2,2021,True,1,38,1
+Xavier Woods,MIN,ARI,2,2021,True,1,27,0
+Asante Samuel Jr.,LAC,KC,7,2023,True,1,0,0
+Bryan Cook,KC,LAC,7,2023,False,1,9,0
+L'Jarius Sneed,KC,LAC,7,2023,False,1,4,0
+Charvarius Ward,SF,MIN,7,2023,True,1,0,0
+Camryn Bynum,MIN,SF,7,2023,False,2,0,0
+Joe Schobert,PIT,TEN,15,2021,False,1,23,0
+Cody Barton,WSH,NYJ,16,2023,True,1,52,0
+Quincy Williams,NYJ,WSH,16,2023,False,1,11,0
+Tony Adams,NYJ,WSH,16,2023,False,1,5,0
+Byron Murphy Jr.,ARI,LAR,4,2021,True,1,0,0
+Minkah Fitzpatrick,PIT,BAL,13,2021,False,1,0,0
+Quay Walker,GB,CHI,1,2023,True,1,37,1
+Andre Cisco,JAX,PHI,4,2022,True,1,59,1
+James Bradberry IV,PHI,JAX,4,2022,False,1,5,0
+Elandon Roberts,MIA,LV,3,2021,True,1,85,1
+Riq Woolen,SEA,NO,5,2022,True,1,0,0
+Kareem Jackson,DEN,CHI,4,2023,True,1,5,0
+Mike Hughes,KC,CLE,1,2021,False,1,0,0
+David Long Jr.,LAR,CHI,1,2021,False,1,0,0
+Jessie Bates III,CIN,NYJ,8,2021,True,1,65,0
+Germaine Pratt,CIN,NYJ,8,2021,True,1,4,0
+Shaq Lawson,NYJ,CIN,8,2021,False,1,1,0
+K'Waun Williams,DEN,JAX,8,2022,True,1,0,0
+Justin Simmons,DEN,JAX,8,2022,True,1,0,0
+Tyson Campbell,JAX,DEN,8,2022,False,1,0,0
+Malcolm Roach,NO,CAR,2,2021,True,1,5,0
+Juston Burris,CAR,NO,2,2021,False,1,17,0
+Jaycee Horn,CAR,NO,2,2021,False,1,13,0
+JuJu Brents,IND,JAX,6,2023,True,1,0,0
+Rayshawn Jenkins,JAX,IND,6,2023,False,1,24,0
+Andre Cisco,JAX,IND,6,2023,False,1,21,0
+Darious Williams,JAX,IND,6,2023,False,1,0,0
+C.J. Gardner-Johnson,NO,TB,15,2021,True,1,1,0
+Andrew Wingard,JAX,TEN,14,2022,True,1,13,0
+Amani Hooker,TEN,NYG,1,2022,False,1,0,0
+Jevon Holland,MIA,PIT,7,2022,False,1,33,0
+Justin Bethel,MIA,PIT,7,2022,False,1,11,0
+Noah Igbinoghene,MIA,PIT,7,2022,False,1,0,0
+Rasul Douglas,GB,LAR,12,2021,False,1,33,1
+Avonte Maddox,PHI,LV,7,2021,True,1,-1,0
+Daniel Sorensen,NO,CLE,16,2022,True,1,36,0
+Grant Delpit,CLE,NO,16,2022,False,1,40,0
+Jamel Dean,TB,NO,2,2022,True,2,24,0
+Mike Edwards,TB,NO,2,2022,True,1,68,1
+Jessie Bates III,ATL,CAR,1,2023,False,2,3,0
+Zack Baun,NO,HOU,6,2023,True,1,10,0
+Steven Nelson,HOU,NO,6,2023,False,1,0,0
+Amani Oruwariye,DET,ARI,15,2021,False,1,50,0
+Levi Wallace,BUF,NYJ,10,2021,True,1,15,0
+Taron Johnson,BUF,NYJ,10,2021,True,1,4,0
+Jordan Poyer,BUF,NYJ,10,2021,True,1,0,0
+Tre'Davious White,BUF,NYJ,10,2021,True,1,0,0
+Sharrod Neasman,NYJ,BUF,10,2021,False,1,13,0
+Patrick Peterson,MIN,MIA,6,2022,True,1,6,0
+Harrison Smith,MIN,MIA,6,2022,True,1,0,0
+Talanoa Hufanga,SF,PIT,1,2023,True,1,28,0
+Charvarius Ward,SF,PIT,1,2023,True,1,9,0
+Geno Stone,BAL,TEN,6,2023,True,1,24,0
+Sean Murphy-Bunting,TEN,BAL,6,2023,False,1,10,0
+David Long Jr.,TEN,MIA,17,2021,False,1,0,0
+Darius Slay Jr.,PHI,NO,11,2021,False,1,51,1
+T.J. Edwards,PHI,NO,11,2021,False,1,1,0
+Lonnie Johnson Jr.,HOU,NE,5,2021,False,1,0,0
+James Pierre,PIT,DEN,5,2021,False,1,0,0
+Jonathan Allen,WSH,CHI,6,2022,True,1,1,0
+Cor'Dale Flott,NYG,DAL,10,2023,True,1,21,0
+Darnay Holmes,NYG,DAL,10,2023,True,1,11,0
+DaRon Bland,DAL,NYG,10,2023,False,1,0,0
+Jaquan Johnson,BUF,CHI,16,2022,True,1,0,0
+Kyler Gordon,CHI,BUF,16,2022,False,1,36,0
+Nicholas Morrow,CHI,BUF,16,2022,False,1,5,0
+Jordan Poyer,BUF,BAL,4,2022,True,2,0,0
+Marlon Humphrey,BAL,BUF,4,2022,False,1,26,0
+Patrick Peterson,MIN,CHI,18,2021,False,1,66,1
+Blake Lynch,MIN,CHI,18,2021,False,1,2,0
+Tre'von Moehrig,LV,DEN,6,2021,True,1,35,0
+Johnathan Abram,LV,DEN,6,2021,True,1,6,0
+Brandon Facyson,LV,DEN,6,2021,True,1,0,0
+Jalen Thompson,ARI,SEA,18,2021,False,1,33,0
+Jaire Alexander,GB,SF,3,2021,True,1,30,0
+Julian Love,NYG,DAL,12,2022,True,1,17,0
+Rodarius Williams,NYG,DAL,12,2022,True,1,1,0
+Jimmie Ward,SF,LAR,10,2021,False,2,27,1
+Lamarcus Joyner,NYJ,PIT,4,2022,True,2,4,0
+Jordan Whitehead,NYJ,PIT,4,2022,True,1,0,0
+Michael Carter II,NYJ,PIT,4,2022,True,1,0,0
+Minkah Fitzpatrick,PIT,NYJ,4,2022,False,1,34,0
+Cameron Sutton,PIT,NYJ,4,2022,False,1,26,0
+Roger McCreary,TEN,KC,9,2022,True,1,4,0
+Fabian Moreau,DEN,BUF,10,2023,True,1,9,0
+Justin Simmons,DEN,BUF,10,2023,True,1,0,0
+Sam Franklin Jr.,CAR,MIN,4,2023,False,1,99,1
+Kamu Grugier-Hill,CAR,MIN,4,2023,False,1,31,0
+Duron Harmon,LV,HOU,7,2022,False,1,73,1
+Vonn Bell,CIN,CLE,8,2022,True,1,10,0
+A.J. Green III,CLE,CIN,8,2022,False,1,0,0
+Marshon Lattimore,NO,PHI,17,2022,True,1,12,1
+Josiah Scott,PHI,NO,17,2022,False,1,13,0
+DaRon Bland,DAL,SEA,13,2023,False,1,0,0
+Trevon Diggs,DAL,NYG,3,2022,True,1,7,0
+DeAndre Houston-Carson,HOU,CIN,10,2023,True,1,13,0
+Shaquill Griffin,HOU,CIN,10,2023,True,1,0,0
+Cam Taylor-Britt,CIN,HOU,10,2023,False,1,30,0
+Ashtyn Davis,NYJ,MIA,11,2021,False,1,0,0
+K'Waun Williams,SF,SEA,13,2021,True,1,4,0
+Quandre Diggs,SEA,SF,13,2021,False,1,29,0
+Bobby Wagner,SEA,SF,13,2021,False,1,3,0
+Desmond King II,HOU,JAX,5,2022,True,1,29,0
+Derek Stingley Jr.,HOU,JAX,5,2022,True,1,9,0
+Kenny Moore II,IND,HOU,13,2021,True,1,0,0
+Julian Blackmon,IND,TEN,5,2023,False,1,10,0
+Boogie Basham,BUF,LAR,1,2022,True,1,21,0
+Jordan Poyer,BUF,LAR,1,2022,True,1,6,0
+Dane Jackson,BUF,LAR,1,2022,True,1,2,0
+Troy Hill,LAR,BUF,1,2022,False,1,5,0
+Terrell Lewis,LAR,BUF,1,2022,False,1,0,0
+Talanoa Hufanga,SF,CHI,1,2022,True,1,1,0
+Eddie Jackson,CHI,SF,1,2022,False,1,26,0
+Dennis Gardeck,ARI,CAR,4,2022,True,1,24,0
+Jalen Thompson,ARI,CAR,4,2022,True,1,0,0
+Frankie Luvu,CAR,ARI,4,2022,False,1,33,1
+Kerby Joseph,DET,NYG,11,2022,True,1,38,0
+Aidan Hutchinson,DET,NYG,11,2022,True,1,20,0
+Kwon Alexander,PIT,TEN,9,2023,False,1,0,0
+Cameron Sutton,PIT,BAL,18,2021,True,1,0,0
+Terrell Edmunds,PIT,BAL,18,2021,True,1,0,0
+Geno Stone,BAL,PIT,18,2021,False,1,0,0
+C.J. Mosley,NYJ,CHI,12,2022,False,1,0,0
+Troy Hill,CAR,MIA,6,2023,True,1,61,1
+Anthony Johnson Jr.,GB,LAR,9,2023,False,1,1,0
+Tyrann Mathieu,NO,CAR,18,2022,False,1,41,0
+Daniel Sorensen,NO,CAR,18,2022,False,1,14,0
+Rudy Ford,GB,LV,5,2023,True,1,9,0
+Robert Spillane,LV,GB,5,2023,False,2,28,0
+Amik Robertson,LV,GB,5,2023,False,1,0,0
+Riq Woolen,SEA,LAR,11,2023,True,1,0,0
+Derion Kendrick,LAR,SEA,11,2023,False,1,0,0
+Brandon Stephens,BAL,CLE,4,2023,True,1,52,0
+Geno Stone,BAL,CLE,4,2023,True,1,36,0
+Kyle Hamilton,BAL,CLE,4,2023,True,1,0,0
+Malik Hooker,DAL,LAR,5,2022,True,1,3,0
+Taylor Rapp,BUF,MIA,18,2023,True,1,0,0
+Christian Benford,BUF,MIA,18,2023,True,1,0,0
+Eli Apple,MIA,BUF,18,2023,False,1,8,0
+DeShon Elliott,MIA,BUF,18,2023,False,1,0,0
+Baron Browning,DEN,LAC,6,2022,True,1,-6,0
+Justin Simmons,DEN,WSH,8,2021,False,2,24,0
+Leighton Vander Esch,DAL,PHI,18,2021,True,1,7,0
+Eric Kendricks,MIN,LAC,10,2021,True,1,0,0
+Andrew Van Ginkel,MIA,HOU,12,2022,False,1,23,0
+Verone McKinley III,MIA,HOU,12,2022,False,1,17,0
+Kristian Fulton,TEN,NYJ,4,2021,True,1,13,0
+Quandre Diggs,SEA,SF,4,2021,True,1,5,0
+Micah Hyde,BUF,KC,5,2021,True,1,26,1
+Greg Rousseau,BUF,KC,5,2021,True,1,3,0
+Marcus Jones,NE,CIN,16,2022,False,1,69,1
+Devin McCourty,NE,CIN,16,2022,False,1,0,0
+Tae Crowder,NYG,CHI,17,2021,True,1,17,0
+James Bradberry IV,NYG,CHI,17,2021,True,1,0,0
+Tashaun Gipson Sr.,CHI,NYG,17,2021,False,1,31,0
+Deon Bush,CHI,NYG,17,2021,False,1,15,0
+Steven Nelson,HOU,PIT,4,2023,False,1,33,0
+Charvarius Ward,SF,WSH,17,2023,True,1,3,0
+Deommodore Lenoir,SF,WSH,17,2023,True,1,0,0
+Lonnie Johnson Jr.,HOU,BUF,4,2021,True,1,32,0
+Jaquan Johnson,BUF,HOU,4,2021,False,1,25,0
+Tyler Matakevich,BUF,HOU,4,2021,False,1,15,0
+Tremaine Edmunds,BUF,HOU,4,2021,False,1,4,0
+Micah Hyde,BUF,HOU,4,2021,False,1,0,0
+Tremon Smith,HOU,DAL,14,2022,True,2,33,0
+Israel Mukuamu,DAL,HOU,14,2022,False,1,0,0
+Jordan Fuller,LAR,NO,16,2023,False,1,21,0
+Rasul Douglas,GB,ATL,2,2023,True,1,-2,0
+Jerry Jacobs,DET,GB,4,2023,True,2,34,0
+Rudy Ford,GB,DET,4,2023,False,1,21,0
+Richie Grant,ATL,LAC,9,2022,False,1,10,0
+Eric Stokes,GB,PIT,4,2021,False,1,0,0
+Isaiah Simmons,ARI,TEN,1,2021,True,1,0,0
+Kevin Byard III,TEN,ARI,1,2021,False,1,12,0
+Foyesade Oluokun,ATL,BUF,17,2021,True,1,18,0
+A.J. Terrell,ATL,BUF,17,2021,True,1,7,0
+Duron Harmon,ATL,BUF,17,2021,True,1,0,0
+Kyler Gordon,CHI,NE,7,2022,True,1,42,0
+Jaquan Brisker,CHI,NE,7,2022,True,1,6,0
+Roquan Smith,CHI,NE,7,2022,True,1,4,0
+Myles Bryant,NE,CHI,7,2022,False,1,11,0
+Trevon Diggs,DAL,DET,7,2022,False,1,3,0
+Jourdan Lewis,DAL,DET,7,2022,False,1,0,0
+Kevin Byard III,TEN,LAC,15,2022,True,1,3,0
+Joshua Kalu,TEN,LAC,15,2022,True,1,0,0
+Nasir Adderley,LAC,TEN,15,2022,False,1,0,0
+Cameron Dantzler Sr.,MIN,DET,13,2021,True,1,0,0
+Julian Love,SEA,PHI,15,2023,False,2,0,0
+Desmond King II,HOU,SF,17,2021,True,1,0,0
+Marcell Harris,SF,HOU,17,2021,False,1,2,0
+Dre Greenlaw,SF,DET,1,2021,True,1,39,1
+Nick Niemann,LAC,NYG,14,2021,False,1,0,0
+Geno Stone,BAL,SEA,9,2023,False,1,0,0
+Amik Robertson,LV,NYG,9,2023,False,1,40,0
+Nate Hobbs,LV,NYG,9,2023,False,1,10,0
+Ivan Pace Jr.,MIN,LV,14,2023,True,1,0,0
+Tony Fields II,CLE,HOU,13,2022,True,1,16,1
+John Johnson III,CLE,HOU,13,2022,True,1,0,0
+Jalen Pitre,HOU,CLE,13,2022,False,1,29,0
+Shaq Thompson,CAR,ATL,8,2021,True,1,10,0
+Stephon Gilmore,CAR,ATL,8,2021,True,1,0,0
+Taylor Rapp,LAR,NYG,6,2021,True,2,31,0
+Robert Rochell,LAR,NYG,6,2021,True,1,1,0
+Xavier McKinney,NYG,LAR,6,2021,False,2,23,0
+Michael Davis,LAC,IND,16,2022,True,1,30,0
+Asante Samuel Jr.,LAC,IND,16,2022,True,1,11,0
+Derwin James Jr.,LAC,IND,16,2022,True,1,0,0
+Rodney Thomas II,IND,LAC,16,2022,False,1,5,0
+Corey Ballentine,GB,MIN,17,2023,True,1,0,0
+Joey Porter Jr.,PIT,BAL,5,2023,False,1,0,0
+Devin White,TB,JAX,16,2023,False,1,10,0
+Antoine Winfield Jr.,TB,JAX,16,2023,False,1,0,0
+P.J. Williams,NO,TB,8,2021,False,1,40,1
+C.J. Gardner-Johnson,NO,TB,8,2021,False,1,26,0
+C.J. Gardner-Johnson,PHI,HOU,9,2022,True,1,25,0
+James Bradberry IV,PHI,HOU,9,2022,True,1,22,0
+Justin Simmons,DEN,KC,8,2023,False,1,33,0
+Ja'Quan McMillian,DEN,KC,8,2023,False,1,5,0
+Jason Pinnock,NYG,MIA,5,2023,True,1,102,1
+Bobby Okereke,NYG,MIA,5,2023,True,1,7,0
+Justin Simmons,DEN,BAL,13,2022,True,2,8,0
+Grant Delpit,CLE,CAR,1,2022,True,1,-4,0
+Christian Benford,BUF,DAL,15,2023,False,1,8,0
+Terrel Bernard,BUF,PHI,12,2023,True,1,2,0
+James Bradberry IV,PHI,BUF,12,2023,False,1,5,0
+Eric Rowe,PIT,CIN,16,2023,False,1,25,0
+Patrick Peterson,PIT,CIN,16,2023,False,1,0,0
+Alex Highsmith,PIT,CIN,16,2023,False,1,0,0
+Ifeatu Melifonwu,DET,DAL,17,2023,True,1,24,0
+Jourdan Lewis,DAL,DET,17,2023,False,1,0,0
+Donovan Wilson,DAL,DET,17,2023,False,1,0,0
+Brandon Stephens,BAL,ARI,8,2023,True,1,4,0
+Geno Stone,BAL,ARI,8,2023,True,1,1,0
+Mykal Walker,ATL,LAR,2,2022,True,1,21,0
+Casey Hayward,ATL,LAR,2,2022,True,1,0,0
+Cobie Durant,LAR,ATL,2,2022,False,1,51,0
+Jalen Ramsey,LAR,ATL,2,2022,False,1,25,0
+Denzel Ward,CLE,BAL,15,2022,False,1,0,0
+Amani Oruwariye,DET,BAL,3,2021,False,1,0,0
+Derwin James Jr.,LAC,LV,4,2021,False,1,15,0
+Darnay Holmes,NYG,PHI,12,2021,False,1,15,0
+Tae Crowder,NYG,PHI,12,2021,False,1,9,0
+Xavier McKinney,NYG,PHI,12,2021,False,1,0,0
+Jevon Holland,MIA,NYJ,12,2023,True,1,99,1
+Jerome Baker,MIA,NYJ,12,2023,True,1,1,0
+Brandin Echols,NYJ,MIA,12,2023,False,1,30,1
+D.J. Reed,NYJ,MIA,12,2023,False,1,0,0
+Dee Delaney,TB,NO,4,2023,True,1,4,0
+Isaac Yiadom,NO,TB,4,2023,False,1,0,0
+Tayler Hawkins,SF,LAR,18,2023,False,1,0,0
+Paulson Adebo,NO,IND,8,2023,True,1,27,0
+Shaq Thompson,CAR,NYJ,1,2021,False,1,29,0
+Kareem Jackson,DEN,LV,1,2023,False,1,0,0
+Bobby Okereke,NYG,NE,12,2023,False,1,55,0
+Xavier McKinney,NYG,NE,12,2023,False,1,18,0
+Deonte Banks,NYG,NE,12,2023,False,1,0,0
+Ashtyn Davis,NYJ,BUF,11,2023,True,1,51,0
+Rasul Douglas,BUF,NYJ,11,2023,False,2,8,0
+John Johnson III,LAR,CLE,13,2023,False,1,42,0
+Adoree' Jackson,NYG,TB,11,2021,True,1,10,0
+Steve McLendon,TB,NYG,11,2021,False,1,0,0
+Mike Edwards,TB,NYG,11,2021,False,1,0,0
+Tyrann Mathieu,NO,ATL,12,2023,True,2,21,0
+Jessie Bates III,ATL,NO,12,2023,False,1,92,1
+Vonn Bell,CIN,BAL,5,2022,True,1,0,0
+Patrick Queen,BAL,CIN,5,2022,False,1,11,0
+Jahlani Tavai,NE,LV,6,2023,True,1,0,0
+Tre'von Moehrig,LV,NE,6,2023,False,1,25,0
+Devin Lloyd,JAX,LAC,3,2022,True,1,10,0
+Lonnie Johnson Jr.,NO,GB,3,2023,True,1,0,0

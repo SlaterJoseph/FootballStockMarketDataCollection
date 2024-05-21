@@ -1,128 +1,95 @@
-import csv
 import glob
 import os
-import requests
 import json
-import datetime
-
-year = datetime.date.today().year
-
-positional_weekly_stats = {
-    'LB': {'defensive', 'defensiveInterceptions', 'general', 'scoring', 'returning'},
-    'RB': {'rushing', 'returning', 'receiving', 'passing', 'scoring', 'general'},
-    'WR': {'rushing', 'returning', 'receiving', 'passing', 'scoring', 'general'},
-    'TE': {'rushing', 'returning', 'receiving', 'passing', 'scoring', 'general'},
-    'DT': {'defensive', 'defensiveInterceptions', 'general', 'scoring', 'returning'},
-    'DE': {'defensive', 'defensiveInterceptions', 'general', 'scoring', 'returning'},
-    'CB': {'defensive', 'defensiveInterceptions', 'general', 'scoring', 'returning'},
-    'P': {'punting', 'kicking', 'general', 'passing', 'rushing', 'returning'},
-    'PK': {'kicking', 'punting', ' general', 'passing', 'rushing', 'returning'},
-    'QB': {'rushing', 'returning', 'receiving', 'passing', 'scoring', 'general', 'returning'},
-    'S': {'defensive', 'defensiveInterceptions', 'general', 'scoring', 'returning'},
-    'FB': {'rushing', 'returning', 'receiving', 'passing', 'scoring', 'general', 'returning'},
-    'DL': {'defensive', 'defensiveInterceptions', 'general', 'scoring', 'returning'},
-    'DB': {'defensive', 'defensiveInterceptions', 'general', 'scoring', 'returning'},
-}
-
-csvs_titles = ['general', 'passing', 'rushing', 'receiving', 'defensive', 'defensiveInterceptions', 'kicking',
-               'returning', 'punting', 'scoring']
+import csv
+import requests
 
 
-def get_player_stats() -> None:
+def collect_weekly_initially():
     """
-    A function which uses ESPNs weekly stat guide to compile all relevant stats of each player for the 3 seasons.
-    CSVs need to be further preprocessed as the CSVs are made from positional use, not relevant players.
-    I.E. a player who did not see the game will have a 0 stat line but still has an entry in the CSV
-    Returns None
-    -------
+    A function which creates the game by game stats for the players. Uses the espn API
+    where URLs can be found below
+    :return: None, saves the CSVs in the proper folder
     """
-    csvs = initiate_csvs('Weekly', csvs_titles)
+    base_team_event_url = f'https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/!@/schedule?season=@!'
+    base_game_event_url = f'https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=!@'
 
-    # Reading in the data from our player CSV
-    players = csv.reader(open('../CSVs/players.csv'))
-    player_headers = next(players)
-    player_list = list()
+    game_ids = set()
+    headers = dict()
+    player_data = dict()
 
-    for player in players:
-        player_list.append(player)
+    # Grab all the game ids from the 2021 to 2023 seasons
+    for year in [2021, 2022, 2023]:
+        for i in range(1, 33):
+            team_url = base_team_event_url.replace('!@', str(i)).replace('@!', str(year))
+            response = json.loads(requests.get(team_url).text)
+            for item in response['events']:
+                game_ids.add(item['id'])
+    print('Done grabbing all game IDs')
 
-    seasons = [str(year - 1), str(year - 2), str(year - 3)]
+    counter = 0
+    # Go through all the games and
+    for game in game_ids:
+        team_data = dict()
+        game_url = base_game_event_url.replace('!@', str(game))
+        response = json.loads(requests.get(game_url).text)
 
-    # Iterating over players grabbing their stats over the 3 previous seasons
-    for player in player_list:
-        print(player[0])
-        position = player[5]
+        stats = response['boxscore']
+        season = response['header']['season']['year']
+        week = response['header']['week']
+        team_data['team_1'] = stats['teams'][0]['team']['abbreviation']
+        team_data['team_2'] = stats['teams'][1]['team']['abbreviation']
+        home_team = team_data['team_1'] if stats['teams'][0]['homeAway'] == 'away' else team_data['team_2']
 
-        espn_id = player[11]
-        for season in seasons:
-            # Skip over offensive line positions
-            if position not in positional_weekly_stats.keys():
-                continue
+        # Go through the 2 teams
+        for i in range(2):
+            curr_team = stats['players'][i]['team']['abbreviation']
+            opponent = stats['players'][1 if i == 0 else 0]['team']['abbreviation']
 
-            url = f'https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/' \
-                  f'seasons/{season}/athletes/{espn_id}/eventlog'
-            response = json.loads(requests.get(url).text)
+            # Go categories of stats for the teams
+            for stat in stats['players'][i]['statistics']:
+                cat_name = stat['name']
+                labels = ['name', 'team', 'opponent', 'week', 'season', 'isHome']
+                labels.extend(stat['labels'])
+                headers[cat_name] = labels
 
-            if len(response) > 1:
-                for item in response['events']['items']:
-                    if 'statistics' in item:
-                        stats_url = item['statistics']['$ref']
-                        stats = json.loads(requests.get(stats_url).text)
+                if cat_name not in player_data:
+                    player_data[cat_name] = list()
 
-                        for entry in stats['splits']['categories']:
-                            # Weed out the stats which don't affect certain players
-                            if entry['name'] not in positional_weekly_stats[position]:
-                                continue
+                curr_stat = player_data[cat_name]
 
-                            group = entry['name']
-                            performance = list()
-                            performance.append(player[0])
-                            performance.append(player[11])
-                            performance.append(season)
+                # Go through the players on the teams
+                for player in stat['athletes']:
+                    player_stats = [player['athlete']['displayName'], curr_team, opponent, week, season,
+                                    home_team == curr_team]
+                    player_stats.extend(player['stats'])
+                    curr_stat.append(player_stats)
 
-                            for stat in entry['stats']:
-                                performance.append(stat['value'])
+        counter += 1
+        print(f'{counter}/{len(game_ids)}')
+    print('Done fetching all player data')
 
-                            csvs[group].writerow(performance)
-                    # Did not play a game that season
-                    else:
-                        continue
+    csvs = create_csvs(headers)
+
+    # Creating the actual CSVs
+    for title in headers.keys():
+        header = headers[title]
+        csvs[title].writerow(header)
+
+        players = player_data[title]
+        csvs[title].writerows(players)
 
 
-def build_csv_headers() -> {str: list}:
+def update_weekly_stats():
+    pass
+
+
+def create_csvs(headers: dict) -> {str: csv.writer}:
     """
-    Builds the headers that all the csvs will be using
-    Returns A dictionary of CSV headers where each key is the title of the CSV
-    -------
-
+    Creates the CSVs and returns a dictionary of the writers
+    :param headers: A list of the dictionary of headers
+    :return: The dictionary with the title as the key and the writer as the value
     """
-    # Just a single player url for reference
-    url = 'http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/401547408/competitions/401547408' \
-          '/competitors/26/roster/4567048/statistics/0?lang=en&region=us '
-
-    response = json.loads(requests.get(url).text)
-    csv_headers = dict()
-
-    for entry in response['splits']['categories']:
-        title = entry['name']
-        stats = [chunk['abbreviation'] for chunk in entry['stats']]
-        stats = ['name', 'espnId', 'season'] + stats
-        csv_headers[title] = stats
-
-    return csv_headers
-
-
-def initiate_csvs(group: str, titles: list) -> {str: csv.writer}:
-    """
-    Initializes the CSVs to add the stats too
-    Parameters
-    ----------
-    group - The folder the csv will fall under
-    titles - The title that each CSV
-    Returns A dictionary of CSV writers with keys of strings of their to be titles
-    -------
-    """
-    # Deleting the old CSVs
     try:
         files = glob.glob(os.path.join('../CSVs/Weekly', '*'))
         for file in files:
@@ -131,13 +98,15 @@ def initiate_csvs(group: str, titles: list) -> {str: csv.writer}:
     except OSError:
         print("Error occurred while deleting files.")
 
-    csv_headers = build_csv_headers()
     csvs = dict()
 
-    for title in titles:
-        writer = csv.writer(open(f'../../CSVs/{group}/{title}.csv', 'a', newline=''))
-        writer.writerow(csv_headers[title])
+    for title in headers:
+        writer = csv.writer(open(f'../CSVs/Weekly/{title}.csv', 'a', newline=''))
+        writer.writerow(headers[title])
 
         csvs[title] = writer
 
     return csvs
+
+
+collect_weekly_initially()
