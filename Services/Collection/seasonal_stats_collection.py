@@ -20,7 +20,7 @@ def build_csv_seasonal():
     -------
     """
     try:
-        files = glob.glob(os.path.join('../CSVs/Seasonally', '*'))
+        files = glob.glob(os.path.join('../../CSVs/Seasonally', '*'))
         for file in files:
             if os.path.isfile(file):
                 os.remove(file)
@@ -93,7 +93,7 @@ def preprocess_names(name: str) -> (str, str):
     Returns (str - Player name, str - Team(s) name)
     -------
     """
-    with open('../Utils/TeamConversions.json') as f:
+    with open('../../Utils/TeamConversions.json') as f:
         teams = json.load(f)['abbreviation_to_team']
 
     names = ['', '']

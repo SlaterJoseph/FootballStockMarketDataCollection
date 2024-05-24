@@ -14,11 +14,11 @@ def create_player_csv() -> None:
     # Writes the initial header line
     headers = ['Name', 'PlayerID', 'Experience', 'Height', 'Weight', 'Position', 'Age', 'Team', 'TeamID', 'isFreeAgent',
                'Headshot', 'espnID']
-    writer = csv.writer(open('../CSVs/players.csv', 'w', newline=''))
+    writer = csv.writer(open('../../CSVs/players.csv', 'w', newline=''))
     writer.writerow(headers)
     i = 0
 
-    writer = csv.writer(open('../CSVs/players.csv', 'a', newline=''))
+    writer = csv.writer(open('../../CSVs/players.csv', 'a', newline=''))
 
     url = "https://tank01-nfl-live-in-game-real-time-statistics-nfl.p.rapidapi.com/getNFLPlayerList"
     headers = {
