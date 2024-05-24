@@ -11,7 +11,7 @@ base_team_event_url = f'https://site.api.espn.com/apis/site/v2/sports/football/n
 base_game_event_url = f'https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=!@'
 
 
-def collect_weekly_initially() -> None:
+def collect_weekly_initially(years: list) -> None:
     """
     A function which creates the game by game stats for the players. Uses the espn API
     where URLs can be found below
@@ -22,7 +22,7 @@ def collect_weekly_initially() -> None:
     player_data = dict()
 
     # Grab all the game ids from the 2021 to 2023 seasons
-    for year in [2021, 2022, 2023]:
+    for year in years:
         for i in range(1, 33):
             team_url = base_team_event_url.replace('!@', str(i)).replace('@!', str(year))
             response = json.loads(requests.get(team_url).text)
@@ -83,14 +83,13 @@ def update_weekly_stats(teams: set, season: int, week: int) -> None:
     for title in csvs.keys():
         csvs[title].writerows(player_data[title])
 
-    remove_outdated_weekly_stats(teams, season, week)
+    remove_outdated_weekly_stats(season, week)
 
 
-def remove_outdated_weekly_stats(teams: set, season: int, week: int) -> None:
+def remove_outdated_weekly_stats(season: int, week: int) -> None:
     """
     This function removes this week from 3 years ago assuming it exists
     This keeps the data more focused on the prior 3 years
-    :param teams: The teams that have stats which were added
     :param season: The current season
     :param week: The current week
     :return: None
@@ -184,4 +183,4 @@ def parse_for_weekly_data(game: int, player_data: dict) -> dict:
     return player_data
 
 
-collect_weekly_initially()
+collect_weekly_initially([2023, 2022, 2021])
