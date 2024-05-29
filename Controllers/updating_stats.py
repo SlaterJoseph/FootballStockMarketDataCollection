@@ -1,4 +1,4 @@
-from flask import request, jsonify, Blueprint
+from flask import request, Blueprint
 from Services.Collection import weekly_stats_collection, seasonal_stats_collection
 from datetime import date
 
@@ -16,12 +16,9 @@ def update_weekly_stats():
 
 @update_stats.route('/update_seasonal', methods=['POST'])
 def update_seasonal_stats():
-    pass
-
-
-@update_stats.route('/update_depth_charts', methods=['POST'])
-def update_depth_charts():
-    pass
+    data = request.json
+    season = int(data.get('season'))
+    seasonal_stats_collection.get_new_season(season)
 
 
 @update_stats.route('/full_reset', methods=['POST'])

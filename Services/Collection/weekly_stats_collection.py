@@ -23,7 +23,11 @@ def collect_weekly_initially(years: list) -> None:
 
     # Grab all the game ids from the 2021 to 2023 seasons
     for year in years:
-        for i in range(1, 33):
+        for i in range(1, 35):
+            # These indices are the AFC and NFC, not individual teams
+            if i == 31 or 1 == 32:
+                continue
+
             team_url = base_team_event_url.replace('!@', str(i)).replace('@!', str(year))
             response = json.loads(requests.get(team_url).text)
             for item in response['events']:
@@ -33,14 +37,13 @@ def collect_weekly_initially(years: list) -> None:
     counter = 0
     # Go through all the games and
     for game in game_ids:
-        player_data = parse_for_weekly_data(game, player_data)
+        player_data = parse_for_weekly_data(game, player_data, headers, True)
 
         counter += 1
         print(f'{counter}/{len(game_ids)}')
     print('Done fetching all player data')
 
     csvs = create_csvs(headers, True)
-
     # Creating the actual CSVs
     for title in headers.keys():
         header = headers[title]
@@ -63,7 +66,7 @@ def update_weekly_stats(teams: set, season: int, week: int) -> None:
     player_data = dict()
 
     # Getting all the weeks games
-    weekly_url = f'http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/{season}/types/2/weeks/{week}/events?lang=en&region=us'
+    weekly_url = f'http://sports.core.api.espn.com/v2/sports/football/leagues/nfl/seasons/{season}/types/2/weeks/{week}/events?lang=en&region=us '
     week_response = json.loads(requests.get(weekly_url).text)
     game_list = [item['$ref'].split('/')[-1].split('?')[0] for item in week_response['items']]
 
@@ -77,7 +80,7 @@ def update_weekly_stats(teams: set, season: int, week: int) -> None:
 
         # A game with one of our team being a part of it
         if team_1 in teams or team_2 in teams:
-            player_data = parse_for_weekly_data(game, player_data)
+            player_data = parse_for_weekly_data(game, player_data, None, False)
 
     csvs = create_csvs(player_data, False)
     for title in csvs.keys():
@@ -130,18 +133,15 @@ def create_csvs(headers: dict, clean_out: bool) -> {str: csv.writer}:
     csvs = dict()
     for title in headers.keys():
         writer = csv.writer(open(f'../../CSVs/Weekly/{title}.csv', 'a', newline=''))
-
-        # The CSV has been restarted, so we want to rewrite the header
-        if clean_out:
-            writer.writerow(headers[title])
-
         csvs[title] = writer
     return csvs
 
 
-def parse_for_weekly_data(game: int, player_data: dict) -> dict:
+def parse_for_weekly_data(game: int, player_data: dict, headers: dict or None, start: bool) -> dict:
     """
     Takes in the games and a player data dictionary and grabs all needed info
+    :param start: To indicate if this is an initial csv creation
+    :param headers: The headers of the csv
     :param game: The game ID
     :param player_data: A dictionary of categories -> players -> stats
     :return: The updated player data dictionary
@@ -171,6 +171,9 @@ def parse_for_weekly_data(game: int, player_data: dict) -> dict:
             if cat_name not in player_data:
                 player_data[cat_name] = list()
 
+            if start and cat_name not in headers:
+                headers[cat_name] = labels
+
             curr_stat = player_data[cat_name]
 
             # Go through the players on the teams
@@ -184,3 +187,4 @@ def parse_for_weekly_data(game: int, player_data: dict) -> dict:
 
 
 collect_weekly_initially([2023, 2022, 2021])
+

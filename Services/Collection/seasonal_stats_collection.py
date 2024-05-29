@@ -1,4 +1,3 @@
-import datetime
 import json
 
 import pandas
@@ -48,7 +47,6 @@ def get_new_season(season: int) -> None:
 
         df.reset_index(drop=True, inplace=True)
         df.to_csv(f'../../CSVs/Seasonally/{name}.csv')
-
 
 
 def archive_old_season(season: int) -> None:
@@ -156,6 +154,4 @@ def initialize_driver() -> webdriver.Chrome:
     driver = webdriver.Chrome(service=service, options=options)
     return driver
 
-
 # get_new_season(2019)
-
