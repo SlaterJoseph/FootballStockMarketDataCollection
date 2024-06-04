@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 
 import pandas as pd
 
@@ -98,14 +99,13 @@ def remove_outdated_weekly_stats(season: int, week: int) -> None:
     :return: None
     """
     season_to_remove = season - 3
-    print(season_to_remove)
     dfs = dict()
     directory = '../../CSVs/Weekly'
 
     for filename in os.listdir(directory):
         f = os.path.join(directory, filename)
         if os.path.isfile(f):
-            dfs[filename] = pd.read_csv(f)
+            dfs[filename] = pd.read_csv(f, index_col=0)
 
     for name in dfs.keys():
         print(name)
@@ -114,8 +114,16 @@ def remove_outdated_weekly_stats(season: int, week: int) -> None:
         filtered_df = df[mask]  # Removed the game 3 years ago
         df = df[~mask]  # Everything except the games 3 years ago
 
+        df.reset_index(drop=True, inplace=True)
         df.to_csv(f'{directory}/{name}')
-        archived_df = pd.read_csv(f'../../CSVs/Archived/Weekly/{name}')
+
+        archived_path = Path(f'../../CSVs/Archived/Seasonally/{name}')
+        if archived_path.exists():
+            archived_df = pd.read_csv(archived_path, index_col=0)
+        else:
+            archived_df = pd.DataFrame(columns=df.columns)
+
+        archived_df.reset_index(drop=True, inplace=True)
         result = pd.concat([archived_df, filtered_df])
         result.to_csv(f'../../CSVs/Archived/Weekly/{name}')
 
@@ -184,7 +192,3 @@ def parse_for_weekly_data(game: int, player_data: dict, headers: dict or None, s
                 curr_stat.append(player_stats)
 
     return player_data
-
-
-collect_weekly_initially([2023, 2022, 2021])
-

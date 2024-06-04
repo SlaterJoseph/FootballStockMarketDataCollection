@@ -2,10 +2,10 @@ from flask import request, Blueprint
 from Services.Collection import weekly_stats_collection, seasonal_stats_collection
 from datetime import date
 
-update_stats = Blueprint('update_stats', __name__)
+update_stats_bp = Blueprint('update_stats', __name__)
 
 
-@update_stats.route('/update_weekly', methods=['POST'])
+@update_stats_bp.route('/update_weekly', methods=['POST'])
 def update_weekly_stats():
     data = request.json
     teams = set(data.get('teams'))
@@ -14,14 +14,14 @@ def update_weekly_stats():
     weekly_stats_collection.update_weekly_stats(teams, season, week)
 
 
-@update_stats.route('/update_seasonal', methods=['POST'])
+@update_stats_bp.route('/update_seasonal', methods=['POST'])
 def update_seasonal_stats():
     data = request.json
     season = int(data.get('season'))
     seasonal_stats_collection.get_new_season(season)
 
 
-@update_stats.route('/full_reset', methods=['POST'])
+@update_stats_bp.route('/full_reset', methods=['POST'])
 def full_reset():
     """
     This is for completely resting the CSVs

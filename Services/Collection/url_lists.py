@@ -7,7 +7,7 @@ season_stat_urls = [
     'https://www.espn.com/nfl/stats/player/_/view/scoring/season/!/seasontype/2',  # Scoring
     'https://www.espn.com/nfl/stats/player/_/view/special/season/!/seasontype/2',  # Returning
     'https://www.espn.com/nfl/stats/player/_/view/special/stat/kicking/season/!/seasontype/2',  # Kicking
-    'https://www.espn.com/nfl/stats/player/_/view/special/stat/punting/season/!/seasontype/2',  # Punting
+    'https://www.espn.com/nfl/stats/player/_/view/special/stat/punting/season/!/seasontype/2'  # Punting
 ]
 
 # A 1 to 1 Pairing matching each url to a category (passing URL is an index of 0, passing title is an index of 0)

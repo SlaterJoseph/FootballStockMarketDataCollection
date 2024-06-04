@@ -1,20 +1,20 @@
 import json
-
-import pandas
+import os
+from pathlib import Path
+from io import StringIO
 import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from url_lists import season_stat_urls, url_pairings
-from io import StringIO
 from utils import clean_out_csvs
 
 
 def build_csv_seasonal(years: list) -> None:
     """
-    Uses ESPN's seasonal stats and compiles CSVs for the different groupings of stats
-    Returns None
-    -------
+    Builds the seasonal stat CSV
+    :param years: The years to gather the stats of
+    :return: None
     """
     clean_out_csvs('../../CSVs/Seasonally')
     driver = initialize_driver()
@@ -39,14 +39,18 @@ def get_new_season(season: int) -> None:
     driver = initialize_driver()
 
     for url, name in zip(season_stat_urls, url_pairings):
-        df = pd.read_csv(f'../../CSVs/Seasonally/{name}.csv')
-        used_url = url.replace('!', str(season))
-        driver.get(used_url)
+        df = pd.read_csv(f'../../CSVs/Seasonally/{name}.csv', index_col=0)
 
-        df = build_csv(used_url, season, driver, df)
+        print(name)
+
+        df = build_csv(url, season, driver, df)
 
         df.reset_index(drop=True, inplace=True)
         df.to_csv(f'../../CSVs/Seasonally/{name}.csv')
+    driver.quit()
+
+    # Archive the 4-year-old season
+    archive_old_season(season - 3)
 
 
 def archive_old_season(season: int) -> None:
@@ -55,8 +59,33 @@ def archive_old_season(season: int) -> None:
     :param season: The season to remove
     :return: None
     """
-    for url, name in zip(season_stat_urls, url_pairings):
-        csv = pd.read_csv(f'../../CSVs/Seasonally/{name}.csv')
+    dfs = dict()
+    directory = '../../CSVs/Seasonally'
+
+    for filename in os.listdir(directory):
+        f = os.path.join(directory, filename)
+        if os.path.isfile(f):
+            dfs[filename] = pd.read_csv(f, index_col=0)
+
+    for name in dfs.keys():
+        print(name)
+        df = dfs[name]
+        mask = (df['Season'] == season)
+        filtered_df = df[mask]  # Removed the stats from 3 years ago
+        df = df[~mask]  # Everything except the stats from years ago
+
+        df.reset_index(drop=True, inplace=True)
+        df.to_csv(f'{directory}/{name}')
+
+        archived_path = Path(f'../../CSVs/Archived/Seasonally/{name}')
+        if archived_path.exists():
+            archived_df = pd.read_csv(archived_path, index_col=0)
+        else:
+            archived_df = pd.DataFrame(columns=df.columns)
+
+        archived_df.reset_index(drop=True, inplace=True)
+        result = pd.concat([archived_df, filtered_df])
+        result.to_csv(f'../../CSVs/Archived/Seasonally/{name}')
 
 
 def preprocess_names(name: str) -> (str, str):
@@ -77,7 +106,7 @@ def preprocess_names(name: str) -> (str, str):
         for team in teams.keys():
             if team in names[0]:
                 names[1] = f'{team} / {names[1]}'
-                names[0].replace(f'{team}/', '')
+                names[0] = names[0][0:len(names[0]) - len(team)]
                 break
     else:
         for team in teams.keys():
@@ -135,11 +164,14 @@ def build_csv(url: str, year: int, driver: webdriver.Chrome, df: pd.DataFrame) -
         stats.columns = stats.columns.droplevel(0)
 
     names = names.merge(stats, left_index=True, right_index=True)
+    names = rename_columns(names, url)
+    names.reset_index(drop=True)
 
-    if not df.empty:
-        df = pd.concat([df, names], axis=0)
-    else:
+    if df is None:
         df = names
+    else:
+        df.reset_index(drop=True, inplace=True)
+        df = pd.concat([df, names], axis=0, ignore_index=True)
 
     return df
 
@@ -154,4 +186,37 @@ def initialize_driver() -> webdriver.Chrome:
     driver = webdriver.Chrome(service=service, options=options)
     return driver
 
-# get_new_season(2019)
+
+def rename_columns(df: pd.DataFrame, url: str) -> pd.DataFrame:
+    """
+    Renames duplicate columns
+    :param df: The current dataframe
+    :param url: The current url
+    :return: The altered dataframe columns
+    """
+    # Changes duplicate columns to more classified columns
+    if 'defense' in url:
+        df.columns.values[8] = 'SACK YDS'
+        df.columns.values[13] = 'INT YDS'
+    elif 'special' in url and 'kicking' not in url and 'punting' not in url:
+        df.columns.values[5] = 'K ATT'
+        df.columns.values[6] = 'K YDS'
+        df.columns.values[7] = 'K AVG'
+        df.columns.values[8] = 'K LNG'
+        df.columns.values[9] = 'K TD'
+        df.columns.values[10] = 'P ATT'
+        df.columns.values[11] = 'P YDS'
+        df.columns.values[12] = 'P AVG'
+        df.columns.values[13] = 'P LNG'
+        df.columns.values[14] = 'P TD'
+    elif 'punting' in url:
+        df.columns.values[6] = 'P YDS'
+        df.columns.values[8] = 'P AVG'
+        df.columns.values[15] = 'PR YDS'
+        df.columns.values[16] = 'PR AVG'
+
+    return df
+
+
+build_csv_seasonal([2022, 2021, 2020])
+get_new_season(2023)
