@@ -6,7 +6,7 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from url_lists import season_stat_urls, url_pairings
+from Utils.constants import SEASON_STAT_URLS, URL_PAIRINGS
 from utils import clean_out_csvs
 
 
@@ -19,7 +19,7 @@ def build_csv_seasonal(years: list) -> None:
     clean_out_csvs('../../CSVs/Seasonally')
     driver = initialize_driver()
 
-    for url, name in zip(season_stat_urls, url_pairings):
+    for url, name in zip(SEASON_STAT_URLS, URL_PAIRINGS):
         df = None
 
         for year in years:
@@ -38,7 +38,7 @@ def get_new_season(season: int) -> None:
     """
     driver = initialize_driver()
 
-    for url, name in zip(season_stat_urls, url_pairings):
+    for url, name in zip(SEASON_STAT_URLS, URL_PAIRINGS):
         df = pd.read_csv(f'../../CSVs/Seasonally/{name}.csv', index_col=0)
 
         print(name)
