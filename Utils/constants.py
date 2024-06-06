@@ -23,7 +23,7 @@ URL_PAIRINGS = [
 ]
 
 # Used for aggregating seasonal passing totals
-AGGREGATE_PASSING_S = {
+AGGREGATE_PASS_S = {
     'YDS': 'sum',
     'AVG': 'mean',
     'TD': 'sum',
@@ -34,8 +34,15 @@ AGGREGATE_PASSING_S = {
     'ATT': 'sum'
 }
 
+# Renaming passing columns
+MAP_PASS_S = {
+    'YDS': 'PASS YDS',
+    'AVG': 'PASS AVG',
+    'TD': 'PASS TD'
+}
+
 # Used for aggregating seasonal rushing totals
-AGGREGATE_RUSHING_S = {
+AGGREGATE_RUSH_S = {
     'CAR': 'sum',
     'YDS': 'sum',
     'AVG': 'mean',
@@ -43,12 +50,28 @@ AGGREGATE_RUSHING_S = {
     'LONG': 'mean'
 }
 
+# Renaming rushing columns
+MAP_RUSH_S = {
+    'YDS': 'RUSH YDS',
+    'AVG': 'RUSH AVG',
+    'TD': 'RUSH TD',
+    'LONG': 'RUSH LONG'
+}
+
 # Used for aggregating seasonal passing totals
-AGGREGATE_RECEIVING_S = {
+AGGREGATE_REC_S = {
     'REC': 'sum',
     'YDS': 'sum',
     'AVG': 'mean',
     'TD': 'sum',
     'LONG': 'mean',
     'TGTS': 'sum'
+}
+
+# Renaming passing columns
+MAP_REC_S = {
+    'YDS': 'REC YDS',
+    'AVG': 'REC AVG',
+    'TD': 'REC TD',
+    'LONG': 'REC LONG'
 }
