@@ -1,5 +1,5 @@
 from flask import request, Blueprint
-from Services.Collection import weekly_stats_collection, seasonal_stats_collection
+from Services.Collection import weekly_stats_collection, seasonal_stats_collection, team_defense_collection_seasonal
 from datetime import date
 
 update_stats_bp = Blueprint('update_stats', __name__)
@@ -19,6 +19,7 @@ def update_seasonal_stats():
     data = request.json
     season = int(data.get('season'))
     seasonal_stats_collection.get_new_season(season)
+    team_defense_collection.new_seasonal_team_defense(season)
 
 
 @update_stats_bp.route('/full_reset', methods=['POST'])
@@ -31,3 +32,4 @@ def full_reset():
     years = [year, year - 1, year - 2]
     weekly_stats_collection.collect_weekly_initially(years)
     seasonal_stats_collection.build_csv_seasonal(years)
+    team_defense_collection.initial_seasonal_team_defense(years)

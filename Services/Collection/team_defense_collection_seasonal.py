@@ -1,9 +1,19 @@
-import json
 import pandas as pd
 from Utils.constants import AGGREGATE_PASS_S, AGGREGATE_RUSH_S, AGGREGATE_REC_S, MAP_REC_S, MAP_PASS_S, MAP_RUSH_S
+from utils import clean_out_csvs
+
+pd.options.mode.copy_on_write = True
 
 
-def seasonal_team_defense(season: int) -> None:
+def initial_seasonal_team_defense(seasons: list) -> None:
+    """
+    A function which creates the initial season total df
+    :param seasons: A list of seasons to grab data from
+    :return: None
+    """
+
+
+def new_seasonal_team_defense(season: int) -> None:
     """
     A function which grabs season totals of teams defensive players and combines them for the teams defensive stats
     :param season: The given season
@@ -14,31 +24,23 @@ def seasonal_team_defense(season: int) -> None:
     filtered_defensive_df = defensive_df[mask]
 
     weekly_dfs = grab_weekly_dfs(season)
+    new_df = filter_offensive_stats(weekly_dfs)
 
-    with open('../../Utils/TeamConversions.json') as f:
-        teams = json.load(f)['abbreviation_to_team']
-
-    df = filter_offensive_stats(weekly_dfs)
-
-    # Separates players traded mid-season
-    mask = filtered_defensive_df['Teams'].str.len() > 3
-    traded = filtered_defensive_df[mask]
-    filtered_defensive_df = filtered_defensive_df[~mask]
-
+    traded, filtered_defensive_df = split_traded(filtered_defensive_df)
     seasonal_totals = sum_player_season_totals(filtered_defensive_df)
-    traded_totals = traded_seasonal_totals(traded, season)
 
-    df.merge(right=seasonal_totals, on='Team', how='outer')
-    df.to_csv('../../CSVs/Archived/Seasonally/team_defense.csv')
+    new_df = new_df.merge(right=seasonal_totals, on='Team', how='outer', )
+    traded_totals = traded_seasonal_totals(set(traded['Name']), season)
+    new_df = pd.concat([new_df, traded_totals]).groupby('Team', as_index=False).sum()
+    new_df.to_csv('../../CSVs/Seasonally/team_defense.csv')
+    archive_outdated_season(season - 3)
 
 
-def weekly_team_defense(season: int, week: int, team: str) -> None:
+def archive_outdated_season(season: int) -> None:
     """
-    A function which using a season, week and team looks for a specific weekly game and aggregates all the defensive stats
-    :param season:
-    :param week:
-    :param team:
-    :return:
+    Archives seasons older them 3 years
+    :param season: The season to archive
+    :return: None
     """
     pass
 
@@ -71,30 +73,20 @@ def filter_offensive_stats(dfs: list) -> pd.DataFrame:
     for i in range(len(dfs)):
         df = dfs[i]
         df = df.drop(['name', 'team', 'week', 'season', 'isHome'], axis=1)
-
         # The passing df
         if i == 0:
-            df[['CMP', 'ATT']] = df['C/ATT'].str.split('/', expand=True)
-            df.loc[df['QBR'] == '--', 'QBR'] = '0.0'
-            df.drop(['C/ATT', 'SACKS'], axis=1, inplace=True)
-
-            df['QBR'] = pd.to_numeric(df['QBR'])
-            df['CMP'] = pd.to_numeric(df['CMP'])
-            df['ATT'] = pd.to_numeric(df['ATT'])
-            data = df.groupby('opponent').agg(AGGREGATE_PASS_S)
-            data['CMP %'] = (data['CMP'] / data['ATT']) * 100
-            data.rename(mapper=MAP_PASS_S, axis=1, inplace=True)
+            data = filter_qb_stats(df)
             defensive_stats.append(data)
 
         # Rushing  df
         elif i == 1:
-            data = df.groupby('opponent').agg(AGGREGATE_RUSH_S)
+            data = df.groupby('opponent', as_index=False).agg(AGGREGATE_RUSH_S)
             data.rename(mapper=MAP_RUSH_S, axis=1, inplace=True)
             defensive_stats.append(data)
 
         # Receiving df
         else:
-            data = df.groupby('opponent').agg(AGGREGATE_REC_S)
+            data = df.groupby('opponent', as_index=False).agg(AGGREGATE_REC_S)
             data.rename(mapper=MAP_REC_S, axis=1, inplace=True)
             defensive_stats.append(data)
 
@@ -105,6 +97,25 @@ def filter_offensive_stats(dfs: list) -> pd.DataFrame:
     return df
 
 
+def filter_qb_stats(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Code which filters specific the QB totals
+    :param df: The passing df
+    :return: The filtered df
+    """
+    df[['CMP', 'ATT']] = df['C/ATT'].str.split('/', expand=True)
+    df.loc[df['QBR'] == '--', 'QBR'] = '0.0'
+    df.drop(['C/ATT', 'SACKS'], axis=1, inplace=True)
+
+    df['QBR'] = pd.to_numeric(df['QBR'])
+    df['CMP'] = pd.to_numeric(df['CMP'])
+    df['ATT'] = pd.to_numeric(df['ATT'])
+    data = df.groupby('opponent', as_index=False).agg(AGGREGATE_PASS_S)
+    data['CMP %'] = (data['CMP'] / data['ATT']) * 100
+    data.rename(mapper=MAP_PASS_S, axis=1, inplace=True)
+    return data
+
+
 def sum_player_season_totals(players: pd.DataFrame) -> pd.DataFrame:
     """
     Sums all the player totals who played a full season with their team
@@ -113,25 +124,29 @@ def sum_player_season_totals(players: pd.DataFrame) -> pd.DataFrame:
     """
     players.drop(['Unnamed: 0', 'Name', 'Season', 'POS', 'GP'], axis=1, inplace=True)
     players.rename(mapper={'Teams': 'Team'}, axis=1, inplace=True)
-    return players.groupby('Team').sum()
+    return players.groupby('Team', as_index=False).sum()
 
 
-def traded_seasonal_totals(traded: pd.DataFrame, season: int) -> pd.DataFrame:
+def traded_seasonal_totals(traded: set, season: int) -> pd.DataFrame:
     """
     Looks at weekly stats from the players traded and splits them among the proper teams
     :param traded: The dataframe of traded players
     :param season: The season
     :return: The aggregated stat totals organized by teams
     """
-    # TOT,SOLO, TFL,PD, TD
-    df = pd.read_csv('../../CSVs/Weekly/defensive.csv')
-    df.drop(['name', 'opponent', 'week', 'season', 'isHome', 'SACKS', 'QB HTS'], axis=1, inplace=True)
-
-    names = traded.Name.unique()
-    for name in names:
-        mask = (df['name'] == name) & (df['season'] == season)
-        player_stats = df[mask]
-        df.drop(df[mask], inplace=True)
+    weekly_df = pd.read_csv('../../CSVs/Weekly/defensive.csv')
+    weekly_df.rename(mapper={'team': 'Team'}, axis=1, inplace=True)
+    mask = (weekly_df['season'] == season) & (weekly_df['name'].isin(traded))
+    weekly_df = weekly_df[mask]
+    weekly_df.drop(['name', 'opponent', 'week', 'season', 'isHome', 'SACKS', 'QB HTS'], axis=1, inplace=True)
+    return weekly_df
 
 
-seasonal_team_defense(2023)
+def split_traded(df: pd.DataFrame) -> (pd.DataFrame, pd.DataFrame):
+    """
+    A function which splits players in those traded and those not traded
+    :param df: The df of defensive players
+    :return: a df of traded players and a df of not traded players
+    """
+    mask = df['Teams'].str.len() > 3
+    return df[mask], df[~mask]

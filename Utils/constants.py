@@ -38,7 +38,8 @@ AGGREGATE_PASS_S = {
 MAP_PASS_S = {
     'YDS': 'PASS YDS',
     'AVG': 'PASS AVG',
-    'TD': 'PASS TD'
+    'TD': 'PASS TD',
+    'INT': 'PASS INT'
 }
 
 # Used for aggregating seasonal rushing totals
