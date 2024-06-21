@@ -85,7 +85,6 @@ def archive_old_season(season: int) -> None:
 
         archived_df.reset_index(drop=True, inplace=True)
         result = pd.concat([archived_df, filtered_df])
-        result.to_csv(f'../../CSVs/Archived/Seasonally/{name}')
 
 
 def preprocess_names(name: str) -> (str, str):

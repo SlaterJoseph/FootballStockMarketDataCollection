@@ -1,6 +1,6 @@
 import pandas as pd
+from Services.Collection.seasonal_stats_collection import archive_old_season
 from Utils.constants import AGGREGATE_PASS_S, AGGREGATE_RUSH_S, AGGREGATE_REC_S, MAP_REC_S, MAP_PASS_S, MAP_RUSH_S
-from utils import clean_out_csvs
 
 pd.options.mode.copy_on_write = True
 
@@ -11,6 +11,28 @@ def initial_seasonal_team_defense(seasons: list) -> None:
     :param seasons: A list of seasons to grab data from
     :return: None
     """
+    defensive_df = pd.read_csv('../../CSVs/Seasonally/defense.csv')
+    df = None
+
+    for season in seasons:
+        mask = (defensive_df['Season'] == season)
+        filtered_defensive_df = defensive_df[mask]
+
+        weekly_dfs = grab_weekly_dfs(season)
+        new_df = filter_offensive_stats(weekly_dfs)
+
+        traded, filtered_defensive_df = split_traded(filtered_defensive_df)
+        seasonal_totals = sum_player_season_totals(filtered_defensive_df)
+
+        new_df = new_df.merge(right=seasonal_totals, on='Team', how='outer', )
+        traded_totals = traded_seasonal_totals(set(traded['Name']), season)
+        new_df = pd.concat([new_df, traded_totals]).groupby('Team', as_index=False).sum()
+
+        if not df:
+            df = pd.merge(df, new_df, on=df.columns.tolist())
+        else:
+            df = new_df
+    df.to_csv('../../CSVs/Seasonally/team_defense.csv')
 
 
 def new_seasonal_team_defense(season: int) -> None:
@@ -33,16 +55,7 @@ def new_seasonal_team_defense(season: int) -> None:
     traded_totals = traded_seasonal_totals(set(traded['Name']), season)
     new_df = pd.concat([new_df, traded_totals]).groupby('Team', as_index=False).sum()
     new_df.to_csv('../../CSVs/Seasonally/team_defense.csv')
-    archive_outdated_season(season - 3)
-
-
-def archive_outdated_season(season: int) -> None:
-    """
-    Archives seasons older them 3 years
-    :param season: The season to archive
-    :return: None
-    """
-    pass
+    archive_old_season(season - 3)
 
 
 def grab_weekly_dfs(season: int) -> [pd.DataFrame, pd.DataFrame, pd.DataFrame]:

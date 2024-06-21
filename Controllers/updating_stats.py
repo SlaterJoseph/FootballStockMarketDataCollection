@@ -7,6 +7,10 @@ update_stats_bp = Blueprint('update_stats', __name__)
 
 @update_stats_bp.route('/update_weekly', methods=['POST'])
 def update_weekly_stats():
+    """
+    Updates all CSV stats weekly
+    :return: None
+    """
     data = request.json
     teams = set(data.get('teams'))
     season = int(data.get('season'))
@@ -16,10 +20,14 @@ def update_weekly_stats():
 
 @update_stats_bp.route('/update_seasonal', methods=['POST'])
 def update_seasonal_stats():
+    """
+    Updates all seasonal stats at the end of a season
+    :return: None
+    """
     data = request.json
     season = int(data.get('season'))
     seasonal_stats_collection.get_new_season(season)
-    team_defense_collection.new_seasonal_team_defense(season)
+    team_defense_collection_seasonal.new_seasonal_team_defense(season)
 
 
 @update_stats_bp.route('/full_reset', methods=['POST'])
@@ -32,4 +40,27 @@ def full_reset():
     years = [year, year - 1, year - 2]
     weekly_stats_collection.collect_weekly_initially(years)
     seasonal_stats_collection.build_csv_seasonal(years)
-    team_defense_collection.initial_seasonal_team_defense(years)
+    team_defense_collection_seasonal.initial_seasonal_team_defense(years)
+
+
+"""
+Sample JSON
+Weekly
+{
+    teams: {
+        teams
+    }, 
+    season: 20##,
+    week: ##
+}
+
+Seasonal
+{
+    season: 20##
+}
+
+Full Reset
+{
+    
+}
+"""
