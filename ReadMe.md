@@ -17,7 +17,7 @@
 - Docker
 
 ### Running
-Clone the repo: git clone https://github.com/SlaterJoseph/FootballStockMarketDataCollection
+Clone the repo: git clone https://github.com/SlaterJoseph/FootballStockMarketDataCollection  
 Create a properties.yaml file in the root directory
 - Add property: full_reset_password: 123abc (Needed for full reset route)
 
