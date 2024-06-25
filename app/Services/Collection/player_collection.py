@@ -41,7 +41,3 @@ def create_player_csv() -> None:
 
         print(item['longName'])
         writer.writerow(player_info)
-
-
-create_player_csv()
-

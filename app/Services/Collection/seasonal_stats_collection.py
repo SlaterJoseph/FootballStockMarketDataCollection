@@ -7,7 +7,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from Utils.constants import SEASON_STAT_URLS, URL_PAIRINGS
-from utils import clean_out_csvs
+from .utils import clean_out_csvs
 
 
 def build_csv_seasonal(years: list) -> None:
@@ -215,7 +215,3 @@ def rename_columns(df: pd.DataFrame, url: str) -> pd.DataFrame:
         df.columns.values[16] = 'PR AVG'
 
     return df
-
-
-build_csv_seasonal([2022, 2021, 2020])
-get_new_season(2023)
