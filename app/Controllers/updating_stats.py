@@ -89,7 +89,7 @@ def full_reset():
             years = [year, year - 1, year - 2]
             weekly_stats_collection.collect_weekly_initially(years)
             seasonal_stats_collection.build_csv_seasonal(years)
-            team_defense_collection_seasonal.initial_seasonal_team_defense(years)
+            team_defense_collection_seasonal.initial_seasonal_team_defense_seasonally(years)
             response = {'message': 'Processed successfully'}
             return_code = 200
         # Incorrect password

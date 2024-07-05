@@ -1,11 +1,12 @@
 import pandas as pd
 from Services.Collection.seasonal_stats_collection import archive_old_season
 from Utils.constants import AGGREGATE_PASS_S, AGGREGATE_RUSH_S, AGGREGATE_REC_S, MAP_REC_S, MAP_PASS_S, MAP_RUSH_S
+from utils import split_traded, sum_player_season_totals
 
 pd.options.mode.copy_on_write = True
 
 
-def initial_seasonal_team_defense(seasons: list) -> None:
+def initial_seasonal_team_defense_seasonally(seasons: list) -> None:
     """
     A function which creates the initial season total df
     :param seasons: A list of seasons to grab data from
@@ -129,17 +130,6 @@ def filter_qb_stats(df: pd.DataFrame) -> pd.DataFrame:
     return data
 
 
-def sum_player_season_totals(players: pd.DataFrame) -> pd.DataFrame:
-    """
-    Sums all the player totals who played a full season with their team
-    :param players: The df of players who played a full season with a team
-    :return: A df of players stats aggregated by team
-    """
-    players.drop(['Unnamed: 0', 'Name', 'Season', 'POS', 'GP'], axis=1, inplace=True)
-    players.rename(mapper={'Teams': 'Team'}, axis=1, inplace=True)
-    return players.groupby('Team', as_index=False).sum()
-
-
 def traded_seasonal_totals(traded: set, season: int) -> pd.DataFrame:
     """
     Looks at weekly stats from the players traded and splits them among the proper teams
@@ -155,11 +145,4 @@ def traded_seasonal_totals(traded: set, season: int) -> pd.DataFrame:
     return weekly_df
 
 
-def split_traded(df: pd.DataFrame) -> (pd.DataFrame, pd.DataFrame):
-    """
-    A function which splits players in those traded and those not traded
-    :param df: The df of defensive players
-    :return: a df of traded players and a df of not traded players
-    """
-    mask = df['Teams'].str.len() > 3
-    return df[mask], df[~mask]
+
