@@ -6,7 +6,7 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from Utils.constants import SEASON_STAT_URLS, URL_PAIRINGS
+from ..Utils.constants import SEASON_STAT_URLS, URL_PAIRINGS
 from .utils import clean_out_csvs
 
 

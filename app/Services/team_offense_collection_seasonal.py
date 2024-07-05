@@ -14,12 +14,20 @@ def initial_offensive_seasonal_collection(seasons: list) -> None:
     for csv_name in offensive_csvs.keys():
         curr_csv = offensive_csvs[csv_name]
 
+        df = None
         for season in seasons:
             mask = (curr_csv['Season'] == season)
             filtered_df = curr_csv[mask]
 
             traded, untraded = split_traded(filtered_df)
             season_totals = sum_player_season_totals(untraded)
+
+
+            # if not df:
+            #     df = pd.merge(df, new_df, on=df.columns.tolist())
+            # else:
+
+
 
     pass
 
@@ -45,3 +53,13 @@ def read_in_offensive_csvs() -> dict:
             offensive_csvs[filename[:-4]] = df
 
     return offensive_csvs
+
+
+def grab_weekly_csv(category: str, season: int) -> pd.DataFrame:
+    """
+    Getting the weekly CSV of the category and parsed for the specific season
+    :param category: The name of the category
+    :param season: The season we are currently looking for
+    :return: The parsed csv
+    """
+

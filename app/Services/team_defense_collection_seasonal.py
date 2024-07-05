@@ -1,6 +1,6 @@
 import pandas as pd
-from Services.Collection.seasonal_stats_collection import archive_old_season
-from Utils.constants import AGGREGATE_PASS_S, AGGREGATE_RUSH_S, AGGREGATE_REC_S, MAP_REC_S, MAP_PASS_S, MAP_RUSH_S
+from seasonal_stats_collection import archive_old_season
+from ..Utils.constants import AGGREGATE_PASS_S, AGGREGATE_RUSH_S, AGGREGATE_REC_S, MAP_REC_S, MAP_PASS_S, MAP_RUSH_S
 from utils import split_traded, sum_player_season_totals
 
 pd.options.mode.copy_on_write = True
@@ -145,4 +145,4 @@ def traded_seasonal_totals(traded: set, season: int) -> pd.DataFrame:
     return weekly_df
 
 
-
+initial_seasonal_team_defense_seasonally([2021, 2022, 2023])
