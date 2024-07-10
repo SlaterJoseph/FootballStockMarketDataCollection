@@ -1,5 +1,4 @@
 from flask import request, Blueprint, jsonify
-from Services.Collection import weekly_stats_collection, seasonal_stats_collection, team_defense_collection_seasonal
 from datetime import date
 import yaml
 
@@ -12,6 +11,8 @@ def update_weekly_stats():
     Updates all CSV stats weekly
     :return: JSON message, return code
     """
+    from app.Services import weekly_stats_collection
+
     try:
         data = request.json
         required_keys = ['teams', 'season', 'week']
@@ -43,6 +44,8 @@ def update_seasonal_stats():
     Updates all seasonal stats at the end of a season
     :return: JSON message, return code
     """
+    from app.Services import seasonal_stats_collection, team_defense_collection_seasonal
+
     data = request.json
     try:
         if not data and 'season' not in data:
@@ -73,6 +76,8 @@ def full_reset():
     This is for completely resting the CSVs
     :return: JSON message, return code
     """
+    from ..Services import weekly_stats_collection, seasonal_stats_collection, team_defense_collection_seasonal
+
     data = request.json
     yaml_file = '../../../properties.yaml'
     with open(yaml_file, 'r') as f:

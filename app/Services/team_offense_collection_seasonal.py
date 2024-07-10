@@ -1,6 +1,6 @@
 import pandas as pd
 import os
-from utils import sum_player_season_totals, split_traded
+from app.Services.utils import sum_player_season_totals, split_traded
 
 
 def initial_offensive_seasonal_collection(seasons: list) -> None:
@@ -22,13 +22,9 @@ def initial_offensive_seasonal_collection(seasons: list) -> None:
             traded, untraded = split_traded(filtered_df)
             season_totals = sum_player_season_totals(untraded)
 
-
             # if not df:
             #     df = pd.merge(df, new_df, on=df.columns.tolist())
             # else:
-
-
-
     pass
 
 
