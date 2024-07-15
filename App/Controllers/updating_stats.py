@@ -1,6 +1,10 @@
+import os
+
 from flask import request, Blueprint, jsonify
 from datetime import date
 import yaml
+
+from App.Services import player_collection, weekly_stats_collection, seasonal_stats_collection, team_defense_collection_seasonal
 
 update_stats_bp = Blueprint('update_stats', __name__)
 
@@ -11,8 +15,6 @@ def update_weekly_stats():
     Updates all CSV stats weekly
     :return: JSON message, return code
     """
-    from app.Services import weekly_stats_collection
-
     try:
         data = request.json
         required_keys = ['teams', 'season', 'week']
@@ -44,8 +46,6 @@ def update_seasonal_stats():
     Updates all seasonal stats at the end of a season
     :return: JSON message, return code
     """
-    from app.Services import seasonal_stats_collection, team_defense_collection_seasonal
-
     data = request.json
     try:
         if not data and 'season' not in data:
@@ -76,11 +76,13 @@ def full_reset():
     This is for completely resting the CSVs
     :return: JSON message, return code
     """
-    from ..Services import weekly_stats_collection, seasonal_stats_collection, team_defense_collection_seasonal
-
     data = request.json
-    yaml_file = '../../../properties.yaml'
-    with open(yaml_file, 'r') as f:
+
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    root_dir = os.path.abspath(os.path.join(current_dir, '..', '..'))
+    yaml_path = os.path.join(root_dir, 'properties.yaml')
+
+    with open(yaml_path, 'r') as f:
         yaml_data = yaml.safe_load(f)
 
     try:
@@ -90,6 +92,7 @@ def full_reset():
 
         # Commit to full reset
         if yaml_data['full_reset_password'] == str(data.get('full_reset_password')):
+            player_collection.create_player_csv()
             year = date.today().year - 1
             years = [year, year - 1, year - 2]
             weekly_stats_collection.collect_weekly_initially(years)

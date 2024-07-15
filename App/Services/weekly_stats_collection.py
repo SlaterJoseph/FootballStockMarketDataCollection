@@ -1,10 +1,11 @@
 import os
 from pathlib import Path
 import pandas as pd
-from .utils import clean_out_csvs
 import json
 import csv
 import requests
+
+from App.Services.utils import clean_out_csvs
 
 base_team_event_url = f'https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/!@/schedule?season=@!'
 base_game_event_url = f'https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event=!@'

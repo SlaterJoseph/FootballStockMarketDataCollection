@@ -1,6 +1,7 @@
 import pandas as pd
 import os
-from app.Services.utils import sum_player_season_totals, split_traded
+
+from App.Services.utils import split_traded, sum_player_season_totals
 
 
 def initial_offensive_seasonal_collection(seasons: list) -> None:
@@ -58,4 +59,3 @@ def grab_weekly_csv(category: str, season: int) -> pd.DataFrame:
     :param season: The season we are currently looking for
     :return: The parsed csv
     """
-

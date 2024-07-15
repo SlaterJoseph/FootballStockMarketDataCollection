@@ -6,8 +6,9 @@ import pandas as pd
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from app.Utils.constants import SEASON_STAT_URLS, URL_PAIRINGS
-from app.Services.utils import clean_out_csvs
+
+from App.Services.utils import clean_out_csvs
+from App.Utils.constants import SEASON_STAT_URLS, URL_PAIRINGS
 
 
 def build_csv_seasonal(years: list) -> None:

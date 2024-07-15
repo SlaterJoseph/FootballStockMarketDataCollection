@@ -1,7 +1,7 @@
 import pandas as pd
-from seasonal_stats_collection import archive_old_season
-from app.Utils.constants import AGGREGATE_PASS_S, AGGREGATE_RUSH_S, AGGREGATE_REC_S, MAP_REC_S, MAP_PASS_S, MAP_RUSH_S
-from app.Services.utils import split_traded, sum_player_season_totals
+from App.Services.seasonal_stats_collection import archive_old_season
+from App.Services.utils import split_traded, sum_player_season_totals
+from App.Utils.constants import AGGREGATE_PASS_S, AGGREGATE_RUSH_S, AGGREGATE_REC_S, MAP_REC_S, MAP_PASS_S, MAP_RUSH_S
 
 pd.options.mode.copy_on_write = True
 
@@ -143,6 +143,3 @@ def traded_seasonal_totals(traded: set, season: int) -> pd.DataFrame:
     weekly_df = weekly_df[mask]
     weekly_df.drop(['name', 'opponent', 'week', 'season', 'isHome', 'SACKS', 'QB HTS'], axis=1, inplace=True)
     return weekly_df
-
-
-initial_seasonal_team_defense_seasonally([2021, 2022, 2023])
