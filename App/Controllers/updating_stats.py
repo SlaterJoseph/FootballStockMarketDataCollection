@@ -4,7 +4,10 @@ from flask import request, Blueprint, jsonify
 from datetime import date
 import yaml
 
-from App.Services import player_collection, weekly_stats_collection, seasonal_stats_collection, team_defense_collection_seasonal
+from App.Services import player_collection, weekly_stats_collection, seasonal_stats_collection, \
+    team_defense_collection_seasonal
+from App.Controllers.utils.functions import yaml_lookup
+from App.Controllers.utils.exceptions import AuthorizationError
 
 update_stats_bp = Blueprint('update_stats', __name__)
 
@@ -17,9 +20,15 @@ def update_weekly_stats():
     """
     try:
         data = request.json
-        required_keys = ['teams', 'season', 'week']
+        password = yaml_lookup('password.weekly_update')
+        required_keys = ['teams', 'season', 'week', 'password']
+
         if not data and not all(key in data for key in required_keys):
             raise ValueError('Invalid JSON payload')
+
+        elif password != str(data.get('password')):
+            raise AuthorizationError('Failed Authentication')
+
         else:
             teams = set(data.get('teams'))
             season = int(data.get('season'))
@@ -27,13 +36,20 @@ def update_weekly_stats():
             weekly_stats_collection.update_weekly_stats(teams, season, week)
 
             response = {'message': 'Processed successfully'}
-            return_code = 200
+            return_code = 201
 
+    # Incorrect JSON
     except ValueError as e:
         response = {'error': str(e)}
-        return_code = 422
+        return_code = 400
 
-    except Exception as e:
+    # Incorrect Password
+    except AuthorizationError as e:
+        response = {'error': str(e)}
+        return_code = 401
+
+    # Other Exceptions
+    except Exception:
         response = {'error': 'Internal Server Error'}
         return_code = 500
 
@@ -47,9 +63,14 @@ def update_seasonal_stats():
     :return: JSON message, return code
     """
     data = request.json
+    password = yaml_lookup('password.seasonal_update')
+
     try:
         if not data and 'season' not in data:
             raise ValueError('Invalid JSON payload')
+
+        elif password != str(data.get('password')):
+            raise AuthorizationError('Failed Authentication')
 
         else:
             season = int(data.get('season'))
@@ -57,13 +78,19 @@ def update_seasonal_stats():
             team_defense_collection_seasonal.new_seasonal_team_defense(season)
 
             response = {'message': 'Processed successfully'}
-            return_code = 200
+            return_code = 201
 
+    # Incorrect Json
     except ValueError as e:
         response = {'error': str(e)}
-        return_code = 422
+        return_code = 400
 
-    except Exception as e:
+    # Incorrect Password
+    except AuthorizationError as e:
+        response = {'error': str(e)}
+        return_code = 401
+
+    except Exception:
         response = {'error': 'Internal Server Error'}
         return_code = 500
 
@@ -77,41 +104,75 @@ def full_reset():
     :return: JSON message, return code
     """
     data = request.json
-
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    root_dir = os.path.abspath(os.path.join(current_dir, '..', '..'))
-    yaml_path = os.path.join(root_dir, 'properties.yaml')
-
-    with open(yaml_path, 'r') as f:
-        yaml_data = yaml.safe_load(f)
+    password = yaml_lookup('password.full_reset')
 
     try:
         # Make sure JSON is valid
-        if not data or 'full_reset_password' not in data:
+        if not data or 'password' not in data:
             raise ValueError('Invalid JSON or missing required key')
 
         # Commit to full reset
-        if yaml_data['full_reset_password'] == str(data.get('full_reset_password')):
-            player_collection.create_player_csv()
+        if password == str(data.get('password')):
             year = date.today().year - 1
             years = [year, year - 1, year - 2]
             weekly_stats_collection.collect_weekly_initially(years)
             seasonal_stats_collection.build_csv_seasonal(years)
             team_defense_collection_seasonal.initial_seasonal_team_defense_seasonally(years)
             response = {'message': 'Processed successfully'}
-            return_code = 200
-        # Incorrect password
+            return_code = 201
+
         else:
-            response = {'error': 'Unauthorized request'}
-            return_code = 403
+            raise AuthorizationError('Failed Authentication')
 
     # Invalid Json
     except ValueError as e:
         response = {'error': str(e)}
-        return_code = 422
+        return_code = 400
+
+    # Incorrect Password
+    except AuthorizationError as e:
+        response = {'error': str(e)}
+        return_code = 401
 
     # Catch other exceptions
     except Exception as e:
+        response = {'error': 'Internal Server Error'}
+        return_code = 500
+
+    return jsonify(response), return_code
+
+
+@update_stats_bp.route('/update_players', methods=['POST'])
+def update_players():
+    """
+    Function which updates the player CSV
+    :return:
+    """
+
+    data = request.json
+    password = yaml_lookup('password.update_players')
+
+    try:
+        if not data or 'password' not in data:
+            raise ValueError('Invalid JSON or missing required key')
+
+        elif password != str(data.get('password')):
+            raise AuthorizationError('Failed Authorization')
+
+        else:
+            player_collection.create_player_csv()
+            response = {'message': 'Processed successfully'}
+            return_code = 201
+
+    except ValueError as e:
+        response = {'error': str(e)}
+        return_code = 400
+
+    except AuthorizationError as e:
+        response = {'error': str(e)}
+        return_code = 401
+
+    except Exception:
         response = {'error': 'Internal Server Error'}
         return_code = 500
 
@@ -126,16 +187,23 @@ Weekly
         teams
     }, 
     season: 20##,
-    week: ##
+    week: ##,
+    password: "password"
 }
 
 Seasonal
 {
     season: 20##
+    password: "password"
 }
 
 Full Reset
 {
-    full_reset_password: "password"
+    password: "password"
+}
+
+Update Players
+{
+    password: "password"
 }
 """
