@@ -16,4 +16,9 @@ def yaml_lookup(lookup_val: str) -> str:
     with open(yaml_path, 'r') as f:
         yaml_data = yaml.safe_load(f)
 
-    return yaml_data[lookup_val] if not None else None
+    keys = lookup_val.split('.')
+
+    for key in keys:
+        yaml_data = yaml_data[key]
+
+    return yaml_data

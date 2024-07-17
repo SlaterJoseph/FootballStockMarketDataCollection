@@ -61,6 +61,3 @@ def create_player_csv() -> None:
         print(i)
 
     players_df.to_csv('../CSVs/players.csv')
-
-
-create_player_csv()
